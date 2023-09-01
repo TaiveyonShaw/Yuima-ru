@@ -1,7 +1,7 @@
 # Yuima-ru-Christian-Church
 A Website for Yuima-ru Christian Church in Ishikawa, Okinawa
 
-# Bugs / Issues:
+## Bugs / Issues:
 - About section is overlapping with home/landing page in smaller viewport
 - Start your journey tab blur comes in after the translation. Either remove or change the background.
   
