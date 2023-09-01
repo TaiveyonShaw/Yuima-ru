@@ -12,3 +12,4 @@ A Website for Yuima-ru Christian Church in Ishikawa, Okinawa
 - Contact section could be completely changed to have the contacts at the bottom instead of buttons/links.
 - Add Offerings page/route later but this might be after conversion.
 - Add History of the church page/route  
+- Smaller Viewports have title smaller, Ken-chan might want it big so try enhancing the size by a bit.
