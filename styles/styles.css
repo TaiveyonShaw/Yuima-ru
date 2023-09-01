@@ -224,7 +224,7 @@ img {
 }
 
 /* Active link */
-.active__link::after {
+.active-link::after {
   width: 70%;
 }
 
