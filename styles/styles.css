@@ -97,7 +97,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1120px;
@@ -413,6 +412,11 @@ img {
   margin-bottom: .5rem;
 }
 
+.location__description{ 
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .location__location {
   display: inline-flex;
   align-items: center;
@@ -493,6 +497,10 @@ img {
   margin-bottom: 2rem;
 }
 
+.google__map {
+  display: flex;
+  margin: auto;
+}
 /*=============== Event ===============*/
 .event__container {
   width: 100%;
@@ -503,6 +511,7 @@ img {
 }
 
 .event__item {
+  border-radius: 25px;
   position: relative;
   margin: 24px;
   width: 320px;
