@@ -433,6 +433,13 @@ img {
   transform: scale(1.2);
 }
 
+.location__disclaimer {
+  text-align: center;
+  padding-top: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 /*=============== staff ===============*/
 .staff {
   position: relative;
@@ -634,6 +641,49 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/*=============== CONTACT ===============*/
+.contact__container {
+  column-gap: 2rem;
+}
+
+.contact__items { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.contact__title {
+  display: flex;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  justify-content: center;
+}
+
+.contact__information {
+  display: flex;
+  margin-bottom: var(--mb-2);
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+  padding-right: 1rem;
+}
+
+.contact__subtitle {
+  color: var(--text-color-light);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact__description:hover {
+  .contact__subtitle {
+    text-decoration: underline;
+  }
+}
 /*=============== FOOTER ===============*/
 .footer {
   padding-block: 2.5rem;
