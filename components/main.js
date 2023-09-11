@@ -80,4 +80,45 @@ sr.reveal('.home__card', {delay: 600, distance: '100px', interval: 100})
 // sr.reveal('.about__image, .schedule__data', {origin: 'left'})
 // sr.reveal('.popular__card', {interval: 200})
 
+/*=============== E-MAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+      contactName = document.getElementById('contact-name'),
+      contactEmail = document.getElementById('contact-email'),
+      contactQuestion = document.getElementById('contact-question'),
+      contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) => {
+  e.preventDefault()
+
+  // Check if the field has a value
+  if (contactName.value === '' || contactEmail.value === '' || contactQuestion.value === '') {
+    // Add and remove color
+    contactMessage.classList.remove('color-blue')
+    contactMessage.classList.add('color-red')
+     
+    // Show message
+    contactMessage.textContent = 'Write all the input fields'
+  } else {
+    // serviceID -tempplateID - #form - publickey
+      emailjs.sendForm('service_opokv8u','template_euqmqp5','#contact-form','lVtuU6lShmQYHiU65' )
+        .then(() => {
+          // Show message and add color
+          contactMessage.classList.add('color-blue')
+          contactMessage.textContent = 'Message Sent'
+
+          // Remove message after five seconds
+          setTimeout(() => {
+            contactMessage.textContent = ''
+          }, 5000)
+        }, (error) => {
+          alert('Something has failed...', error)
+        })
+
+        // To clear the input field
+        contactName.value = ''
+        contactEmail.value = ''
+        contactQuestion.value = ''
+    }
+}
+contactForm.addEventListener('submit', sendEmail)
 /*=============== LANGUAGE SWITCHER ===============*/

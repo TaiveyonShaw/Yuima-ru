@@ -55,7 +55,7 @@
                   </li>
 
                   <li class="nav__item">
-                     <i class="ri-mail-line"></i>
+                     <i class="ri-chat-3-line"></i>
                      <a href="#contact" class="nav__link">Contact Us</a>
                   </li>
                </ul>
@@ -304,49 +304,78 @@
          </section>
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
-            <h2 class="section__title">
-               Contact Us
-            </h2>
-            
-            <p class="contact__subtitle">
-               Our Contacts
-            </p>
+            <h2 class="contact__section-title">Contact Us</h2>
+            <span class="contact__section-subtitle">Our Contact Info</span>
 
-            <div class="contact__items">
-               <!--==================== CONTACT INFO 1 ====================-->
-               <div class="contact__information">
-                  <i class="ri-phone-line contact__icon"></i>
-                  <div class="contact__description">
-                  <a href="tel:070-3662-8889" target="_blank">
-                  <h3 class="contact__title">Phone Number</h3>
-                     <span class="contact__subtitle">070-3662-8889</span>
-                  </a>
+            <!-- Add container css to contact__container css -->
+            <div class="contact__container grid section__border">
+               <div class="contact__content">
+                  <h3 class="contact__title">
+                     <i class="ri-arrow-right-s-line"></i> Contact Information
+                  </h3>
+
+                  <div class="contact__info">
+                     <div class="contact__data">
+                        <span class="contact__data-title">E-mail</span>
+                           <span class="contact__data-info">kenjiji2020@gmail.com</span>
+                           
+                           <a href="mailto: kenjiji2020@gmail.com" class="contact__button" target="_blank">
+                              E-mail Us <i class="ri-mail-line"></i>
+                           </a>
+                     </div>
+
+                     <div class="contact__data">
+                        <span class="contact__data-title">Phone Number</span>
+                           <span class="contact__data-info">+81 070-3662-8889</span>
+
+                           <a href="tel:+81 070-3662-8889" class="contact__button" target="_blank">
+                              Call Us <i class="ri-phone-line"></i>
+                           </a>
+                     </div>
+
+                     <div class="contact__data">
+                        <span class="contact__data-title">Our Address</span>
+                           <span class="contact__data-info">1-chōme-28-26 Ishikawa <br> Uruma, Okinawa 904-1106</span>
+
+                           <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="contact__button" target="_blank">
+                              Find our Address <i class="ri-home-2-line"></i>
+                           </a>
+                     </div>
+                     
                   </div>
                </div>
 
-               <!--==================== CONTACT INFO 2 ====================-->
-               <div class="contact__information">
-                  <i class="ri-mail-line contact__icon"></i>
-                  <div class="contact__description">
-                  <a href="mailto: kenjiji2020@gmail.com" target="_blank">
-                  <h3 class="contact__title">E-mail</h3>
-                     <span class="contact__subtitle">kenjiji2020@gmail.com</span>
-                  </a>
-                  </div>
+               <div class="contact__content">
+                  <h3 class="contact__title">
+                     <i class="ri-send-plane-line"></i> Contact us!
+                  </h3>
+
+                  <form action="" class="contact__form" id="contact-form">
+                     
+                     <div class="contact__form-div">
+                        <label class="contact__form-tag">Name</label>
+                           <input type="text" name="user_name" required placeholder="Write your name" class="contact__form-input" id="contact-name">
+                     </div>
+                     
+                     <div class="contact__form-div">
+                        <label class="contact__form-tag">E-mail</label>
+                           <input type="text" name="user_email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
+                     </div>
+
+                     <div class="contact__form-div contact__form-area">
+                        <label class="contact__form-tag">Question</label>
+                        <textarea name="user_question" placeholder="Send us a message" id="contact-question" class="contact__form-input"></textarea>
+                     </div>
+
+                     <p class="contact__message" id="contact-message"></p>
+
+                     <button type="submit" class="contact__button">
+                        Submit <i class="ri-arrow-right-up-line"></i>
+                     </button>
+                  </form>
                </div>
 
-               <!--==================== CONTACT INFO 3 ====================-->
-               <div class="contact__information">
-                  <i class="ri-map-pin-line contact__icon"></i>
-                  <div class="contact__description">
-                  <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" target="_blank">
-                  <h3 class="contact__title">Our Address</h3>
-                     <span class="contact__subtitle">1-chōme-28-26 Ishikawa <br> Uruma, Okinawa 904-1106</span>
-                  </a>
-                  </div>
-               </div>
             </div>
-
          </section>
       </main>
 
@@ -446,6 +475,9 @@
 
       <!--=============== SCROLLREVEAL ===============-->
       <script src="components/scrollreveal.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="components/main.js"></script>
