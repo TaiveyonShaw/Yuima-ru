@@ -433,11 +433,15 @@ img {
   transform: scale(1.2);
 }
 
+.location__address {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
 .location__disclaimer {
   text-align: center;
-  padding-top: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  margin: auto;
+  max-width: 800px;
 }
 
 /*=============== staff ===============*/
@@ -507,6 +511,7 @@ img {
 .google__map {
   display: flex;
   margin: auto;
+  padding-bottom: 1rem;
 }
 /*=============== Event ===============*/
 .event__container {
@@ -642,6 +647,9 @@ img {
 }
 
 /*=============== CONTACT ===============*/
+.contact {
+  padding-bottom: 2rem;
+}
 .contact__section-title {
   text-align: center;
 }
