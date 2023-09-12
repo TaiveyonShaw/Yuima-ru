@@ -2,10 +2,10 @@
 A Website for Yuima-ru Christian Church in Ishikawa, Okinawa
 
 ## Bugs / Issues:
-
+- Calendar for Event section not working.
   
 ## Current Ideas:
 - Add Offerings page/route later but this might be after conversion.
-- Add History of the church page/route  
+- Add History of the church page/route.
 - Add Japanese/English conversion.
-- Add white/black theme
+- Add white/black theme.
