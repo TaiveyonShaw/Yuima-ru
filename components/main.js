@@ -71,10 +71,10 @@ const sr = ScrollReveal({
   distance: '60px',
   duration: 3000,
   delay: 400,
-  reset: true // Animation repeat
+  reset: false // Animation repeat
 })
 
-sr.reveal('.home__data')/*, .explore__data, .explore__user, .footer__container')*/
+sr.reveal('.home__data')/*, .explore__data, .explore__user, .footer__container')
 sr.reveal('.home__card', {delay: 600, distance: '100px', interval: 100})
 // sr.reveal('.about__data, .schedule__image', {origin: 'right'})
 // sr.reveal('.about__image, .schedule__data', {origin: 'left'})
@@ -100,7 +100,7 @@ const sendEmail = (e) => {
     contactMessage.textContent = 'Write all the input fields'
   } else {
     // serviceID -tempplateID - #form - publickey
-      emailjs.sendForm('service_opokv8u','template_euqmqp5','#contact-form','lVtuU6lShmQYHiU65' )
+      emailjs.sendForm('service_2869nxb','template_icp2nf9','#contact-form','o-o702filqqg2T-1u' )
         .then(() => {
           // Show message and add color
           contactMessage.classList.add('color-blue')
@@ -121,4 +121,6 @@ const sendEmail = (e) => {
     }
 }
 contactForm.addEventListener('submit', sendEmail)
+
 /*=============== LANGUAGE SWITCHER ===============*/
+
