@@ -479,17 +479,32 @@ img {
   padding-top: 16rem;
   text-align: center;
   row-gap: 2.5rem;
+  justify-items: center;
 }
 
-.staff__user {
-  display: inline-flex;
-  align-items: center;
+.staff__member {
+  display: grid;
+  row-gap: .5rem;
+}
+
+.staff__member-container {
+  width: 80%;
+  display: flex;
+  row-gap: 1.5rem;
+  column-gap: 5rem;
+  flex-wrap: wrap;
   justify-content: center;
-  column-gap: .5rem;
+}
+
+.staff__perfil {
+  width: 225px;
+  height: 225px;
+  border-radius: .5rem;
 }
 
 .staff__name {
-  font-size: var(--small-font-size);
+  padding-top: .5rem;
+  font-size: var(--normal-font-size);
   color: var(--title-color);
 }
 
@@ -531,7 +546,6 @@ img {
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
 }
 
 .event__img-container,
@@ -577,7 +591,7 @@ img {
 .event__title,
 .event__day {
   color: #18537a;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: bold;
   letter-spacing: 1px;
   margin: 12px;
@@ -942,7 +956,6 @@ img {
 @media screen and (min-width: 576px) {
   .home__container,
   .about__container,
-  .staff__content,
   .schedule__container {
     grid-template-columns: 380px;
     justify-content: center;
@@ -1126,7 +1139,6 @@ img {
 
   .staff__content {
     padding-top: 28rem;
-    grid-template-columns: 670px 1fr;
   }
 
   .staff__data,
@@ -1134,7 +1146,7 @@ img {
     text-align: initial;
   }
 
-  .staff__user {
+  .staff__member {
     justify-content: flex-end;
     align-self: flex-end;
     margin-bottom: 1.25rem;
