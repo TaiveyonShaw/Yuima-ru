@@ -29,35 +29,46 @@
       <header class="header" id="header">
          <nav class="nav container">
             <a href="#" class="nav__logo">
-               Yuima-ru Ishikawa Christian Church
+               Yuima-ru
             </a>
 
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
                   <li class="nav__item">
                      <i class="ri-home-2-line"></i>
-                     <a href="#home" class="nav__link active-link">Home</a>
+                     <a href="#home" class="nav__link active-link nav__home">Home</a>
                   </li>
 
                   <li class="nav__item">
                      <i class="ri-information-line"></i>
-                     <a href="#about" class="nav__link">About</a>
+                     <a href="#about" class="nav__link nav__about">About</a>
                   </li>
 
                   <li class="nav__item">
                      <i class="ri-calendar-event-fill"></i>
-                     <a href="#schedule" class="nav__link">Schedule</a>
+                     <a href="#schedule" class="nav__link nav__schedule">Schedule</a>
                   </li>
 
                   <li class="nav__item">
                      <i class="ri-map-pin-line"></i>
-                     <a href="#location" class="nav__link">Location</a>
+                     <a href="#location" class="nav__link nav__location">Location</a>
                   </li>
 
                   <li class="nav__item">
                      <i class="ri-chat-3-line"></i>
-                     <a href="#contact" class="nav__link">Contact Us</a>
+                     <a href="#contact" class="nav__link nav__contact">Contact Us</a>
                   </li>
+
+                  <div class="langWrap">
+                     <a language="english" class="langActive languager">
+                        <img src="img/united-states-of-america-flag-icon-32.png" alt="USA Flag" class="flag__img">
+                        English
+                     </a>
+                     <a  language="japanese" class="languager">
+                        <img src="img/japan-flag-icon-32.png" alt="Japan Flag" class="flag__img">
+                        日本語
+                     </a>
+                  </div>
                </ul>
 
                <!-- Close button -->
@@ -76,8 +87,8 @@
       <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <img src="img/home-bg.jpg" alt="home image" class="home__bg">
+         <section class="home section section__border" id="home">
+            <img src="img/test3.jpg" alt="home image" class="home__bg">
 
             <div class="home__container container grid">
                <div class="home__data">
@@ -95,7 +106,7 @@
                      Pastor, Ken Suzuki.
                   </p>
 
-                  <a href="#about" class="button">
+                  <a href="#about" class="button home__button">
                      Start your Journey <i class="ri-arrow-right-line"></i>
                   </a>
                </div>
@@ -105,30 +116,93 @@
 
          <!--==================== ABOUT ====================-->
          <section class="about section" id="about">
-            <div class="about__container container grid">
+            <div class="about__container container grid section__border">
                <div class="about__data">
-                  <h2 class="section__title">
+                  <h2 class="section__title about__title">
                      About Us
                   </h2>
 
                   <p class="about__description">
-                     Let us love each other as Jesus loved us!
-                     <br> <br>                     
+                     Let us love each other as Jesus has loved us!
+                     <br> <br>
+                     We are a small and newly founded church located in Ishikawa!
+                     Come Join us to praise the lord with us!
+                     <br> <br>
                      Please come 5 minutes before service to prepare and be seated for the service! 
                   </p>
 
-                  <a href="#schedule" class="button">
+                  <a href="#schedule" class="button about__schedule">
                      See our Schedule <i class="ri-arrow-right-line"></i>
                   </a>
                </div>
 
                <div class="about__image">
-                  <img src="img/about-beach.jpg" alt="about image" class="about__img">
+                  <img src="img/about-img.webp" alt="about image" class="about__img">
+               </div>
+            </div>
+
+         <!--==================== Announcement ====================-->
+            <div class="announcement__container announcement section__border" id="announcement">
+               <div class="announcement__content container">
+
+                  <div class="announcement__section">
+                     <h2 class="section__title announcement__title">
+                        Announcements
+                     </h2>
+
+                     <p class="announcement__subtitle">
+                        Weekly Announcements
+                     </p>
+                  </div>
+
+                  <div class="announcement__items">
+                     <div class="announcement__item">
+
+                        <div class="announcement__info">
+                           <h2 class="announcement__item-title sunday__title">Sunday Service</h2>
+                           <p class="sunday__description">We will have service every Sunday at 10:00pm</p>
+                        </div>
+                     </div>
+
+                     <div class="announcement__item">
+
+                        <div class="announcement__info">
+                           <h2 class="announcement__item-title lunch__title">Join us for Lunch</h2>
+                           <p class="lunch__description">After the service, we will prepare lunch. Please join us!</p>
+                        </div>
+                     </div>
+
+                     <div class="announcement__item">
+
+                        <div class="announcement__info">
+                           <h2 class="announcement__item-title templocation__title">Location until Heat Cools Down</h2>
+                           <p class="templocation__description">The address will temporarily be at: <br> Uruma-shi Ishikawa 2107-8 (Pastor's house)</p>
+                        </div>
+                     </div>
+
+                     <div class="announcement__item">
+
+                        <div class="announcement__info">
+                           <h2 class="announcement__item-title prayer__title">Prayer Requests</h2>
+                           <p class="prayer__description">
+                              - For the city of Uruma.
+                              <br>
+                              - Family and Friends for salvation.
+                              <br>
+                              - For Peace in Israel.
+                              <br>
+                              -For peace between Russian and Ukraine
+                           </p>
+                        </div>
+                     </div>
+
+                  </div>
+
                </div>
             </div>
 
          <!--==================== Staff ====================-->
-            <div class="staff__container staff section">
+            <div class="staff__container staff section section__border" id="staff">
                <div class="staff__image">
                   <img src="img/explore-beach.jpg" alt="staff image" class="staff__img">
                   <div class="staff__shadow"></div>
@@ -136,11 +210,11 @@
 
                <div class="staff__content container grid">
                   <div class="staff__data">
-                     <h2 class="section__title">
+                     <h2 class="section__title staff__title">
                         Meet our Staff Members
                      </h2>
 
-                     <p class="staff__description">
+                     <p class="staff__description staff__subtitle">
                         Learn about our Staff Members
                      </p>
                   </div>
@@ -149,16 +223,18 @@
 
                      <div class="staff__member">
                         <img src="img/kenchan.webp" alt="staff image" class="staff__perfil">
-                        <span class="staff__name">Ken Suzuki</span>
-                        <p class="staff__description">
+                        <span class="staff__name staff1">Ken Suzuki</span>
+                        <p class="staff__description staff1__description">
                            Pastor / Missionary
                         </p>
                      </div>
 
                      <div class="staff__member">
                         <img src="img/totoro2.png" alt="staff image" class="staff__perfil">
-                        <span class="staff__name">Hisae Suzuki</span>
-                        <p class="staff__description">
+                        <span class="staff__name staff2">
+                           Hisae Suzuki
+                        </span>
+                        <p class="staff__description staff2__description">
                            Assistant
                         </p>
                      </div>
@@ -169,14 +245,14 @@
          </section>
 
          <!--==================== Schedule ====================-->
-         <section class="schedule section" id="schedule">
+         <section class="schedule section section__border" id="schedule">
             <div class="schedule__container container">
                <div class="schedule__data">
-                  <h2 class="section__title">
-                     Schedules
+                  <h2 class="section__title schedule__title">
+                     Schedule
                   </h2>
 
-                  <p class="schedule__description">
+                  <p class="schedule__description schedule__subtitle">
                      Weekly Schedule
                   </p>
 
@@ -191,24 +267,24 @@
                            <div class="event__overlay"></div>
             
                            <div class="event__section-info">
-                                 <p class="event__title">Bible Study Session</p>
+                                 <p class="event__title biblestudy__title">Bible Study Session</p>
                                  <div class="event__separator"></div>
-                                 <p class="event__location">Ishikawa, Okinawa</p>
-                                 <p class="event__day">Tuesday, 09:30 AM JST</p>
+                                 <p class="event__location biblestudy__location">Ishikawa, Okinawa</p>
+                                 <p class="event__day biblestudy__time">Tuesday, 09:30 AM JST</p>
 
                                  <div class="event__additional-info">
-                                    <p class="event__info">
+                                    <p class="event__info biblestudy__address">
                                        <i class="fas fa-map-marker-alt"></i>
                                        1-chōme-28-6 Ishikawa Uruma
                                     </p>
             
                                     <!-- consider margin -->
-                                    <p class="event__info">
+                                    <p class="event__info biblestudy__date">
                                        <i class="far fa-calendar-alt"></i>
                                        test
                                     </p>
 
-                                    <p class="event__info event__description">
+                                    <p class="event__info event__description biblestudy__description">
                                        Come join us for a Bible study session to better understand god's message!
                                     </p>
                                  </div>
@@ -225,22 +301,22 @@
                            <div class="event__overlay"></div>
             
                            <div class="event__section-info">
-                                 <p class="event__title">Worship Service</p>
+                                 <p class="event__title worship__title">Worship Service</p>
                                  <div class="event__separator"></div>
-                                 <p class="event__location">Ishikawa, Okinawa</p>
-                                 <p class="event__day">Sunday, 10:00 AM JST</p>
+                                 <p class="event__location worship__location">Ishikawa, Okinawa</p>
+                                 <p class="event__day worship__time">Sunday, 10:00 AM JST</p>
             
                                  <div class="event__additional-info">
-                                    <p class="event__info">
+                                    <p class="event__info worship__address">
                                        <i class="fas fa-map-marker-alt"></i>
                                        1-chōme-28-6 Ishikawa Uruma
                                     </p>
-                                    <p class="event__info">
+                                    <p class="event__info worship__date">
                                        <i class="far fa-calendar-alt"></i>
                                        Sat, Sep 19, 10:00 AM EDT(In-progress)
                                     </p>
             
-                                    <p class="event__info event__description">
+                                    <p class="event__info event__description worship__description">
                                        Come join us for a Worship Service and Jr. Church to learn about god together!
                                     </p>
                                  </div>
@@ -257,22 +333,22 @@
                            <div class="event__overlay"></div>
             
                            <div class="event__section-info">
-                                 <p class="event__title">Jr. Church</p>
+                                 <p class="event__title jrchurch__title">Jr. Church</p>
                                  <div class="event__separator"></div>
-                                 <p class="event__location">Ishikawa, Okinawa</p>
-                                 <p class="event__day">Sunday, 09:30 AM JST</p>
+                                 <p class="event__location jrchurch__location">Ishikawa, Okinawa</p>
+                                 <p class="event__day jrchurch__time">Sunday, 09:30 AM JST</p>
             
                                  <div class="event__additional-info">
-                                    <p class="event__info">
+                                    <p class="event__info jrchurch__address">
                                        <i class="fas fa-map-marker-alt"></i>
                                        1-chōme-28-6 Ishikawa Uruma
                                     </p>
-                                    <p class="event__info">
+                                    <p class="event__info jrchurch__date">
                                        <i class="far fa-calendar-alt"></i>
                                           Sat, Sep 19, 10:00 AM EDT(In-progress)
                                     </p>
             
-                                    <p class="event__info event__description">
+                                    <p class="event__info event__description jrchurch__description">
                                        Come join us for Jr. Church for kids to learn about god!
                                     </p>
                                  </div>
@@ -287,8 +363,8 @@
          </section>
 
          <!--==================== Location ====================-->
-         <section class="location section" id="location">
-            <h2 class="section__title">
+         <section class="location section section__border" id="location">
+            <h2 class="section__title location__title">
                Location
             </h2>
             
@@ -316,39 +392,39 @@
          </section>
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
-            <h2 class="contact__section-title">Contact Us</h2>
-            <span class="contact__section-subtitle">Our Contact Info</span>
+            <h2 class="contact__section_title section">Contact Us</h2>
+            <span class="contact__section_subtitle">Our Contact Info</span>
 
-            <div class="contact__container grid section__border">
+            <div class="contact__container grid">
                <div class="contact__content">
-                  <h3 class="contact__title">
-                     <i class="ri-arrow-right-s-line"></i> Contact Information
+                  <h3 class="contact__title left__contact">
+                     <i class="ri-information-line"></i> Contact Information
                   </h3>
 
                   <div class="contact__info">
                      <div class="contact__data">
-                        <span class="contact__data-title">E-mail</span>
+                        <span class="contact__data-title email__title">E-mail</span>
                            <span class="contact__data-info">kenjiji2020@gmail.com</span>
                            
-                           <a href="mailto: kenjiji2020@gmail.com" class="contact__button" target="_blank">
+                           <a href="mailto: kenjiji2020@gmail.com" class="contact__button email__button" target="_blank">
                               E-mail Us <i class="ri-mail-line"></i>
                            </a>
                      </div>
 
                      <div class="contact__data">
-                        <span class="contact__data-title">Phone Number</span>
+                        <span class="contact__data-title phone__title">Phone Number</span>
                            <span class="contact__data-info">+81 070-3662-8889</span>
 
-                           <a href="tel:+81 070-3662-8889" class="contact__button" target="_blank">
+                           <a href="tel:+81 070-3662-8889" class="contact__button phone__button" target="_blank">
                               Call Us <i class="ri-phone-line"></i>
                            </a>
                      </div>
 
                      <div class="contact__data">
-                        <span class="contact__data-title">Our Address</span>
-                           <span class="contact__data-info">1-chōme-28-6 Ishikawa <br> Uruma, Okinawa <br> 〒904-1106</span>
+                        <span class="contact__data-title address__title">Our Address</span>
+                           <span class="contact__data-info address__info">1-chōme-28-6 Ishikawa <br> Uruma, Okinawa <br> 〒904-1106</span>
 
-                           <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="contact__button" target="_blank">
+                           <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="contact__button address__button" target="_blank">
                               Find our Address <i class="ri-home-2-line"></i>
                            </a>
                      </div>
@@ -357,30 +433,30 @@
                </div>
 
                <div class="contact__content">
-                  <h3 class="contact__title">
+                  <h3 class="contact__title right__contact">
                      <i class="ri-send-plane-line"></i> Contact us!
                   </h3>
 
                   <form action="" class="contact__form" id="contact-form">
                      
                      <div class="contact__form-div">
-                        <label class="contact__form-tag">Name</label>
+                        <label class="contact__form-tag form__name">Name</label>
                            <input type="text" name="user_name" required placeholder="Write your name" class="contact__form-input" id="contact-name">
                      </div>
                      
                      <div class="contact__form-div">
-                        <label class="contact__form-tag">E-mail</label>
+                        <label class="contact__form-tag form__email">E-mail</label>
                            <input type="text" name="user_email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
                      </div>
 
                      <div class="contact__form-div contact__form-area">
-                        <label class="contact__form-tag">Question</label>
+                        <label class="contact__form-tag form__question">Questions</label>
                         <textarea name="user_question" placeholder="Send us a message" id="contact-question" class="contact__form-input"></textarea>
                      </div>
 
                      <p class="contact__message" id="contact-message"></p>
 
-                     <button type="submit" class="contact__button">
+                     <button type="submit" class="contact__button submit__button">
                         Submit <i class="ri-arrow-right-up-line"></i>
                      </button>
                   </form>
@@ -404,49 +480,53 @@
 
                <div class="footer__data grid">
                   <div>
-                     <h3 class="footer__title">About</h3>
+                     <h3 class="footer__title footer__about">About</h3>
 
                      <ul class="footer__links">
                         <li>
-                           <a href="#about" class="footer__link">About Us</a>
+                           <a href="#about" class="footer__link about__us">About Us</a>
                         </li>
                         
                         <li>
-                           <a href="#about" class="footer__link">Meet Our Staffs</a>
+                           <a href="#staff" class="footer__link about__staff">Meet Our Staffs</a>
+                        </li>
+
+                        <li>
+                           <a href="#announcement" class="footer__link about__announcement">Announcements</a>
+                        </li>
+                     
+                     </ul>
+                  </div>
+
+                  <div>
+                     <h3 class="footer__title footer__information">Information</h3>
+
+                     <ul class="footer__links">
+                        <li>
+                           <a href="#schedule" class="footer__link information__schedule">Schedules</a>
+                        </li>
+                        
+                        <li>
+                           <a href="#location" class="footer__link information__location">Location</a>
                         </li>
 
                      </ul>
                   </div>
 
                   <div>
-                     <h3 class="footer__title">Information</h3>
+                     <h3 class="footer__title footer__contact">Contact</h3>
 
                      <ul class="footer__links">
                         <li>
-                           <a href="#schedule" class="footer__link">Schedules</a>
+                           <a href="#contact" class="footer__link contact__phone">Phone Number</a>
                         </li>
                         
                         <li>
-                           <a href="#location" class="footer__link">Location</a>
-                        </li>
-
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer__title">Contact</h3>
-
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#contact" class="footer__link">Phone Number</a>
-                        </li>
-                        
-                        <li>
-                           <a href="#contact" class="footer__link">E-mail</a>
+                           <a href="#contact" class="footer__link contact__email">E-mail</a>
                         </li>
 
                         <li>
-                           <a href="#contact" class="footer__link">Address</a>
+                           <a href="#contact" class="footer__link contact__address">Address</a>
                         </li>
                      </ul>
                   </div>
@@ -472,6 +552,8 @@
                   </a>
                </div>
 
+               <div>*Socials currently in-progress*</div>
+
                <span class="footer__copy">
                   &#169; Copyright YICC. All rights reserved
                </span>
@@ -493,7 +575,8 @@
       <!--=============== MAIN JS ===============-->
       <script src="components/main.js"></script>
 
-      <!--=============== DATE JS ===============-->
-      <script src="components/date.js"></script>
+      <!--=============== LANGUAGE CHANGE JS ===============-->
+      <script src="components/langDB.js"></script>
+
    </body>
 </html>
