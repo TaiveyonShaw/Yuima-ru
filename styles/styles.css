@@ -242,6 +242,7 @@ img {
   display: flex;
   column-gap: .5rem;
   cursor: pointer;
+  color: var(--title-color);
 }
 
 .langActive {
@@ -623,6 +624,9 @@ img {
 
 .event__img-container img {
   width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .event__body-container {

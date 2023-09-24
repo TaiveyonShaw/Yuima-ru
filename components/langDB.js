@@ -343,7 +343,7 @@ let data = {
       "worship__address": '<i class="fas fa-map-marker-alt"></i>' + "石川県うるま市1丁目28-6",
       "worship__date": '<i class="far fa-calendar-alt"></i>' + "日曜, 9月19日, 10:00 AM JST(In-progress)",
       "worship__description": "一緒に神様について学ぶ礼拝にぜひご参加ください！",
-      "jrchurch__title": "ジュニア教会",
+      "jrchurch__title": "ジュニアチャーチ",
       "jrchurch__location": "石川、沖縄",
       "jrchurch__time": "日曜日, 09:30 AM JST",
       "jrchurch__address": '<i class="fas fa-map-marker-alt"></i>' + "石川県うるま市1丁目28-6",
