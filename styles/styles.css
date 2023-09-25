@@ -9,6 +9,10 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --title-color-white: hsl(0, 0%, 95%);
   --text-color-white: hsl(0, 0%, 70%);
+  
+  --title-color-black: hsl(0, 0%, 5%);
+  --text-color-black: hsl(0, 0%, 8%);
+  --text-color-black-light: hsl(0, 0%, 20%);
 
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 70%);
@@ -541,6 +545,7 @@ body.dark-theme {
 
 .announcement__item-title {
   padding-bottom: 1rem;
+  color: var(--title-color-black);
 }
 
 .announcement__item {
@@ -557,6 +562,10 @@ body.dark-theme {
   position: relative;
   text-align: center;
   padding-bottom: 2rem;
+}
+
+.announcement__items p {
+  color: var(--text-color-black);
 }
 
 /*=============== Staff ===============*/
