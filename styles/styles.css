@@ -7,6 +7,9 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
+  --title-color-white: hsl(0, 0%, 95%);
+  --text-color-white: hsl(0, 0%, 70%);
+
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 70%);
   --text-color-light: hsl(0, 0%, 60%);
@@ -114,7 +117,9 @@ img {
 
 .section__border {
   border-bottom: 1px solid var(--title-color);
-  padding-bottom: 3.5rem;
+  padding-top: 3.5rem;
+  margin: auto;
+  width: 50%;
 }
 
 .section__title {
@@ -145,7 +150,7 @@ img {
 }
 
 .nav__logo {
-  color: var(--title-color);
+  color: var(--title-color-white);
   font-family: var(--second-font);
   font-weight: var(--font-semi-bold);
 }
@@ -154,7 +159,7 @@ img {
 .nav__close {
   display: flex;
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: var(--title-color-white);
   cursor: pointer;
 }
 
@@ -182,7 +187,7 @@ img {
 
 .nav__link {
   position: relative;
-  color: var(--title-color);
+  color: var(--title-color-white);
   font-family: var(--second-font);
   font-weight: var(--font-medium);
 }
@@ -191,7 +196,7 @@ img {
   content: '';
   width: 0;
   height: 2px;
-  background-color: var(--title-color);
+  background-color: var(--title-color-white);
   position: absolute;
   left: 0;
   bottom: -.5rem;
@@ -206,6 +211,10 @@ img {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
+}
+
+.nav__menu i {
+  color: var(--text-color-white);
 }
 
 /* Show menu */
@@ -232,6 +241,7 @@ img {
   width: 70%;
 }
 
+/*=============== LANGUAGE CHANGE ===============*/
 .langWrap {
   display: flex;
   align-items: center;
@@ -242,7 +252,7 @@ img {
   display: flex;
   column-gap: .5rem;
   cursor: pointer;
-  color: var(--title-color);
+  color: var(--title-color-white);
 }
 
 .langActive {
@@ -252,6 +262,33 @@ img {
 .flag__img {
   border-radius: .2rem;
 }
+
+/*=============== VARIABLE DARK THEME ===============*/
+body.dark-theme { 
+  --title-color: hsl(0, 0%, 5%);
+  --text-color: hsl(0, 0%, 8%);
+  --text-color-light: hsl(0, 0%, 20%);
+  --body-color: hsl(0, 0%, 97%);
+  --container-color: hsl(0, 0%, 60%);
+}
+/*=============== BUTTON CHANGE ===============*/
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+
+.change-theme {
+  padding-right: 1rem;
+  padding-left: 2rem;
+  font-size: 1.25rem;
+  color: var(--title-color-white);
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: hsl(0, 0%, 80%);
+}
+
 /*=============== HOME ===============*/
 .home {
   position: relative;
@@ -292,16 +329,18 @@ img {
 .home__subtitle {
   font-size: var(--h2-font-size);
   margin-bottom: .5rem;
+  color: var(--title-color-white);
 }
 
 .home__title {
   font-size: var(--biggest-font-size);
   margin-bottom: 1rem;
+  color: var(--title-color-white);
 }
 
 .home__description {
   margin-bottom: 2rem;
-  color: var(--title-color);
+  color: var(--title-color-white);
 }
 
 .home__cards {
@@ -341,6 +380,14 @@ img {
   transform: scale(1.2);
 }
 
+.home__button i {
+  color: var(--title-color-white);
+}
+
+.home__data a {
+  color: var(--title-color-white)
+}
+
 /*=============== BUTTON ===============*/
 .button {
   background-color: hsla(0, 0%, 100%, .2);
@@ -368,6 +415,7 @@ img {
 /*=============== ABOUT ===============*/
 .about__container {
   row-gap: 3rem;
+  padding-bottom: 4rem;
 }
 
 .about__data {
@@ -496,11 +544,13 @@ img {
 }
 
 .announcement__item {
-  width: 100%;
   padding: 2rem;
-  background-color: var(--container-color);
+  width: 100%;
+  background-color: #fff;
+  margin: 24px;
   border-radius: 1rem;
   text-align: center;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
 }
 
 .announcement__subtitle {
@@ -1214,10 +1264,12 @@ img {
 
   .staff__data,
   .staff__data .section__title {
+    color: var(--title-color-white);
     text-align: initial;
   }
 
   .staff__member {
+    padding-top: 7rem;
     justify-content: flex-end;
     align-self: flex-end;
     margin-bottom: 1.25rem;

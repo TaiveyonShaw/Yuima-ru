@@ -58,28 +58,34 @@
                      <i class="ri-chat-3-line"></i>
                      <a href="#contact" class="nav__link nav__contact">Contact Us</a>
                   </li>
-
-                  <div class="langWrap">
-                     <a language="english" class="langActive languager">
-                        <img src="img/united-states-of-america-flag-icon-32.png" alt="USA Flag" class="flag__img">
-                        English
-                     </a>
-                     <a  language="japanese" class="languager">
-                        <img src="img/japan-flag-icon-32.png" alt="Japan Flag" class="flag__img">
-                        日本語
-                     </a>
-                  </div>
                </ul>
-
+               
                <!-- Close button -->
                <div class="nav__close" id="nav-close">
                   <i class="ri-close-line"></i>
                </div>
             </div>
+                        
+            <div class="nav__btns">
+               <!-- Language Change -->
+               <div class="langWrap">
+                  <a language="english" class="langActive languager">
+                     <img src="img/united-states-of-america-flag-icon-32.png" alt="USA Flag" class="flag__img">
+                     English
+                  </a>
+                  <a  language="japanese" class="languager">
+                     <img src="img/japan-flag-icon-32.png" alt="Japan Flag" class="flag__img">
+                     日本語
+                  </a>
+               </div>
+               
+               <!-- Theme Change -->
+               <i class="ri-moon-clear-line change-theme" id="theme-button"></i>
 
-            <!-- Toggle Button -->
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-fill"></i>
+               <!-- Toggle Button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-fill"></i>
+               </div>
             </div>
          </nav>
       </header>
@@ -87,7 +93,7 @@
       <!--==================== MAIN ====================-->
       <main class="main">
          <!--==================== HOME ====================-->
-         <section class="home section section__border" id="home">
+         <section class="home section" id="home">
             <img src="img/home-bg.jpg" alt="home image" class="home__bg">
 
             <div class="home__container container grid">
@@ -116,7 +122,7 @@
 
          <!--==================== ABOUT ====================-->
          <section class="about section" id="about">
-            <div class="about__container container grid section__border">
+            <div class="about__container container grid">
                <div class="about__data">
                   <h2 class="section__title about__title">
                      About Us
@@ -141,8 +147,10 @@
                </div>
             </div>
 
-         <!--==================== Announcement ====================-->
-            <div class="announcement__container announcement section__border" id="announcement">
+            <div class="section__border"></div>
+
+            <!--==================== Announcement ====================-->
+            <div class="announcement__container announcement" id="announcement">
                <div class="announcement__content container">
 
                   <div class="announcement__section">
@@ -202,7 +210,7 @@
             </div>
 
          <!--==================== Staff ====================-->
-            <div class="staff__container staff section section__border" id="staff">
+            <div class="staff__container staff section" id="staff">
                <div class="staff__image">
                   <img src="img/explore-beach.jpg" alt="staff image" class="staff__img">
                   <div class="staff__shadow"></div>
@@ -244,8 +252,10 @@
             </div>
          </section>
 
+         <div class="section__border"></div>
+
          <!--==================== Schedule ====================-->
-         <section class="schedule section section__border" id="schedule">
+         <section class="schedule section" id="schedule">
             <div class="schedule__container container">
                <div class="schedule__data">
                   <h2 class="section__title schedule__title">
@@ -362,8 +372,10 @@
             </div>
          </section>
 
+         <div class="section__border"></div>
+
          <!--==================== Location ====================-->
-         <section class="location section section__border" id="location">
+         <section class="location section" id="location">
             <h2 class="section__title location__title">
                Location
             </h2>
@@ -390,8 +402,11 @@
 
             </div>
          </section>
+         
+         <div class="section__border"></div>
+
          <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
+         <section class="contact" id="contact">
             <h2 class="contact__section_title section">Contact Us</h2>
             <span class="contact__section_subtitle">Our Contact Info</span>
 
