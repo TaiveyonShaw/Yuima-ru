@@ -541,6 +541,7 @@ body.dark-theme {
   display: grid;
   row-gap: 1rem;
   justify-content: center;
+  justify-items: center;
 }
 
 .announcement__item-title {
