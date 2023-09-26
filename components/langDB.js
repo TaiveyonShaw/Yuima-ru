@@ -117,7 +117,7 @@ const footer__contactEl = document.querySelector('.footer__contact');
 const contact__phoneEl = document.querySelector('.contact__phone');
 const contact__emailEl = document.querySelector('.contact__email');
 const contact__addressEl = document.querySelector('.contact__address');
-
+ const underconstructionEl = document.querySelector('.underconstruction');
 // Translation
 link.forEach(el => {
    el.addEventListener('click', () => {
@@ -209,6 +209,7 @@ link.forEach(el => {
       contact__phoneEl.innerHTML = data[attr].contact__phone;
       contact__emailEl.innerHTML = data[attr].contact__email;
       contact__addressEl.innerHTML = data[attr].contact__address;
+      underconstructionEl.innerHTML = data[attr].underconstruction;
    });
 });
 
@@ -297,6 +298,7 @@ let data = {
     "contact__phone": "Phone Number",
     "contact__email": "E-mail",
     "contact__address": "Address",
+    "underconstruction": "*Socials currently in-progress*",
   },
    "japanese": 
    {
@@ -381,5 +383,6 @@ let data = {
       "contact__phone": "電話番号",
       "contact__email": "Eメールアドレス",
       "contact__address": "住所",
+      "underconstruction": "*SNSは作成中です*"
    },
 }
