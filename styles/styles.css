@@ -573,6 +573,13 @@ body.dark-theme {
 .staff {
   position: relative;
 }
+.staff__title {
+  color: var(--title-color-white);
+}
+
+.staff__subtitle {
+  color: var(--title-color-white);
+}
 
 .staff__image {
   position: absolute;
@@ -1274,7 +1281,6 @@ body.dark-theme {
 
   .staff__data,
   .staff__data .section__title {
-    color: var(--title-color-white);
     text-align: initial;
   }
 
