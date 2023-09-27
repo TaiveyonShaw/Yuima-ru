@@ -20,7 +20,13 @@ const home__buttonEl = document.querySelector('.home__button');
 
 // About Section
 const about__titleEl = document.querySelector('.about__title');
-const about__descriptionEl = document.querySelector('.about__description');
+const about__descriptionEl = document.querySelector('.about__announcement__description');
+const about__announcement__buttonEl = document.querySelector('.about__announcement__button');
+const about__location__titleEl = document.querySelector('.about__location__title');
+const about__location__descriptionEl = document.querySelector('.about__location__description');
+const about__locationEl = document.querySelector('.about__location');
+const about__schedule__titleEl = document.querySelector('.about__schedule__title');
+const about__schedule__descriptionEl = document.querySelector('.about__schedule__description');
 const about__scheduleEl = document.querySelector('.about__schedule');
 
 // Announcement Section
@@ -118,6 +124,7 @@ const contact__phoneEl = document.querySelector('.contact__phone');
 const contact__emailEl = document.querySelector('.contact__email');
 const contact__addressEl = document.querySelector('.contact__address');
  const underconstructionEl = document.querySelector('.underconstruction');
+ 
 // Translation
 link.forEach(el => {
    el.addEventListener('click', () => {
@@ -128,19 +135,33 @@ link.forEach(el => {
       const attr = el.getAttribute('language');
 
       // Translation
+      
+      // Nav Bar
       nav__logoEl.innerHTML = data[attr].nav__logo;
       nav__homeEl.innerHTML = data[attr].nav__home;
       nav__aboutEl.innerHTML = data[attr].nav__about;
       nav__scheduleEl.innerHTML = data[attr].nav__schedule;
       nav__locationEl.innerHTML = data[attr].nav__location;
       nav__contactEl.innerHTML = data[attr].nav__contact;
+
+      // Home Section
       subtitleEl.innerHTML = data[attr].home__subtitle;
       titleEl.innerHTML = data[attr].home__title;
       home__descriptionEl.innerHTML = data[attr].home__description;
       home__buttonEl.innerHTML = data[attr].home__button;
+
+      // About Section
       about__titleEl.innerHTML = data[attr].about__title;
-      about__descriptionEl.innerHTML = data[attr].about__description;
+      about__descriptionEl.innerHTML = data[attr].about__announcement__description;
+      about__announcement__buttonEl.innerHTML = data[attr].about__announcement__button;
+      about__location__titleEl.innerHTML = data[attr].about__location__title;
+      about__location__descriptionEl.innerHTML = data[attr].about__location__description;
+      about__locationEl.innerHTML = data[attr].about__location;
+      about__schedule__titleEl.innerHTML = data[attr].about__schedule__title;
+      about__schedule__descriptionEl.innerHTML = data[attr].about__schedule__description;
       about__scheduleEl.innerHTML = data[attr].about__schedule;
+
+      // Announcement Section
       announcement__titleEl.innerHTML = data[attr].announcement__title;
       announcement__subtitleEl.innerHTML = data[attr].announcement__subtitle;
       sunday__titleEl.innerHTML = data[attr].sunday__title;
@@ -151,12 +172,16 @@ link.forEach(el => {
       templocation__descriptionEl.innerHTML = data[attr].templocation__description;
       prayer__titleEl.innerHTML = data[attr].prayer__title;
       prayer__descriptionEl.innerHTML = data[attr].prayer__description;
+      
+      // Staff Section
       staff__titleEl.innerHTML = data[attr].staff__title;
       staff__subtitleEl.innerHTML = data[attr].staff__subtitle;
       staff1El.innerHTML = data[attr].staff1;
       staff1__descriptionEl.innerHTML = data[attr].staff1__description;
       staff2El.innerHTML = data[attr].staff2;
       staff2__descriptionEl.innerHTML = data[attr].staff2__description;
+      
+      // Schedule Section
       schedule__titleEl.innerHTML = data[attr].schedule__title;
       schedule__subtitleEl.innerHTML = data[attr].schedule__subtitle;
       biblestudy__titleEl.innerHTML = data[attr].biblestudy__title;
@@ -177,10 +202,14 @@ link.forEach(el => {
       jrchurch__addressEl.innerHTML = data[attr].jrchurch__address;
       jrchurch__dateEl.innerHTML = data[attr].jrchurch__date;
       jrchurch__descriptionEl.innerHTML = data[attr].jrchurch__description;
+      
+      // Location Section
       location__titleEl.innerHTML = data[attr].location__title;
       location__descriptionEl.innerHTML = data[attr].location__description;
       location__addressEl.innerHTML = data[attr].location__address;
       location__disclaimerEl.innerHTML = data[attr].location__disclaimer;
+      
+      // Contact Section
       contact__titleEl.innerHTML = data[attr].contact__section_title;
       contact__subtitleEl.innerHTML = data[attr].contact__section_subtitle;
       left__contactEl.innerHTML = data[attr].left__contact;
@@ -196,6 +225,8 @@ link.forEach(el => {
       form__emailEl.innerHTML = data[attr].form__email;
       form__questionEl.innerHTML = data[attr].form__question;
       submit__buttonEl.innerHTML = data[attr].submit__button;
+      
+      // Footer Section
       footer__logoEl.innerHTML = data[attr].footer__logo;
       footer__descriptionEl.innerHTML = data[attr].footer__description;
       footer__aboutEl.innerHTML = data[attr].footer__about;
@@ -228,7 +259,13 @@ let data = {
     "home__description": "Come join us in Ishikawa, Okinawa to learn about Christ with our Pastor, Ken Suzuki.",
     "home__button": "Start your Journey" + '<i class="ri-arrow-right-line"></i>',
     "about__title": "About Us",
-    "about__description": "Let us love each other as Jesus has loved us! <br> <br> We are a small and newly founded church located in Ishikawa! Come Join us to praise the lord with us! <br> <br> Please come 5 minutes before service to prepare and be seated for the service!",
+    "about__announcement__description": '<b>"Let us love each other as Jesus has loved us!"</b>',
+    "about__announcement__button": "Check our Announcements" + '<i class="ri-arrow-right-line"></i>',
+    "about__location__title": "Where are we?",
+    "about__location__description": "We are a small and newly founded church located in Ishikawa! Come Join us to praise the lord with us!",
+    "about__location": "See our Location" +  '<i class="ri-arrow-right-line"></i>',
+    "about__schedule__title": "When should I come?",
+    "about__schedule__description": "Please come 5 minutes before service to prepare and be seated for the service! See our schedule below for more details!",
     "about__schedule": "See our Schedule" + '<i class="ri-arrow-right-line"></i>',
     "announcement__title": "Announcements",
     "announcement__subtitle": "Weekly Announcement",
@@ -313,7 +350,14 @@ let data = {
       "home__description": "沖縄県石川で鈴木健牧師と一緒にキリストについて学びましょう。",
       "home__button": "旅を始めましょう" + '<i class="ri-arrow-right-line"></i>',
       "about__title": "私たちについて",
-      "about__description": "イエスが私たちを愛してくださったように、私たちもお互いを愛し合いましょう！ <br> <br> 私たちは、石川県にある新しく設立された小さな教会です。さあ、私たちと一緒に主を賛美しましょう！ <br> <br> 準備を整えてサービスの 5 分前に着席してください。",
+      "about__announcement__description": "<b>”イエスが私たちを愛してくださったように、私たちもお互いを愛し合いましょう！”</b>",
+      "about__announcement__button": "お知らせ" + '<i class="ri-arrow-right-line"></i>',
+      "about__location__title": "アクセス",
+      "about__location__description": "私たちは、石川県にある新しく設立された小さな教会です。さあ、私たちと一緒に主を賛美しましょう！ ",
+      "about__location": "アクセス" +  '<i class="ri-arrow-right-line"></i>',
+      "about__schedule__title": "何時から",
+      "about__schedule__description": "準備を整えてサービスの 5 分前に着席してください。",
+      
       "about__schedule": "スケジュール" + '<i class="ri-arrow-right-line"></i>',
       "announcement__title": "お知らせ",
       "announcement__subtitle": "",
