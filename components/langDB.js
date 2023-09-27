@@ -1,3 +1,14 @@
+// Date Constructor
+const date = new Date();
+
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+// Date Automation
+const sunday = 7 - date.getDay();
+const tuesday = 7 - date.getDay() + 2;
+
+const nextSunday = new Date(date.setDate(date.getDate() + sunday));
+const nextTuesday = new Date(date.setDate(date.getDate() + tuesday));
 //  Language Selection variables
 const langEl = document.querySelector('.langWrap');
 const link = document.querySelectorAll('.languager');
@@ -289,19 +300,19 @@ let data = {
     "biblestudy__location": "Ishikawa, Okinawa",
     "biblestudy__time": "Tuesday, 09:30 AM JST",
     "biblestudy__address": '<i class="fas fa-map-marker-alt"></i>' + "1-chōme-28-6 Ishikawa Uruma",
-    "biblestudy__date": '<i class="far fa-calendar-alt"></i>' + "test",
+    "biblestudy__date": '<i class="far fa-calendar-alt"></i>' + "Tue, " + months[nextTuesday.getMonth()] + " " + nextTuesday.getDate().toString() + ", 09:30AM JST",
     "biblestudy__description": "Come join us for a Bible study session to better understand god's message!",
     "worship__title": "Worship Service",
     "worship__location": "Ishikawa, Okinawa",
     "worship__time": "Sunday, 10:00 AM JST",
     "worship__address": '<i class="fas fa-map-marker-alt"></i>' + "1-chōme-28-6 Ishikawa Uruma",
-    "worship__date": '<i class="far fa-calendar-alt"></i>' + "Sat, Sep 19, 10:00 AM EDT(In-progress)",
+    "worship__date": '<i class="far fa-calendar-alt"></i>' + "Sun, " + months[nextSunday.getMonth()] + " " + nextSunday.getDate().toString() + ", 10:00AM JST",
     "worship__description": "Come join us for a Worship Service and Jr. Church to learn about god together!",
     "jrchurch__title": "Jr. Church (English)",
     "jrchurch__location": "Ishikawa, Okinawa",
     "jrchurch__time": "Sunday, 09:30 AM JST",
     "jrchurch__address": '<i class="fas fa-map-marker-alt"></i>' + "1-chōme-28-6 Ishikawa Uruma",
-    "jrchurch__date": '<i class="far fa-calendar-alt"></i>' + "Sat, Sep 19, 10:00 AM EDT(In-progress)",
+    "jrchurch__date": '<i class="far fa-calendar-alt"></i>' + "Sun, " + months[nextSunday.getMonth()] + " " + nextSunday.getDate().toString() + ", 09:30AM JST",
     "jrchurch__description": "Come join us for Jr. Church for kids to learn about god!",
     "location__title": "Location",
     "location__description": "Where are we located?",
@@ -379,19 +390,19 @@ let data = {
       "schedule__subtitle": "週間スケジュール",
       "biblestudy__title": "聖書勉強会",
       "biblestudy__location": "石川、沖縄",
-      "biblestudy__time": "火曜日, 09:30 AM JST",
+      "biblestudy__time": "火曜日, 09:30午前",
       "biblestudy__address": '<i class="fas fa-map-marker-alt"></i>' + "石川県うるま市1丁目28-6",
       "biblestudy__date": '<i class="far fa-calendar-alt"></i>' + "test",
       "biblestudy__description": "神のメッセージをより深く理解するために、聖書の勉強会にぜひご参加ください。",
       "worship__title": "主日礼拝",
       "worship__location": "石川、沖縄",
-      "worship__time": "日曜日, 10:00 AM JST",
+      "worship__time": "日曜日　10:00午前",
       "worship__address": '<i class="fas fa-map-marker-alt"></i>' + "石川県うるま市1丁目28-6",
       "worship__date": '<i class="far fa-calendar-alt"></i>' + "日曜, 9月19日, 10:00 AM JST(In-progress)",
       "worship__description": "一緒に神様について学ぶ礼拝にぜひご参加ください！",
       "jrchurch__title": "ジュニアチャーチ（英語）",
       "jrchurch__location": "石川、沖縄",
-      "jrchurch__time": "日曜日, 09:30 AM JST",
+      "jrchurch__time": "日曜日 09:30午前",
       "jrchurch__address": '<i class="fas fa-map-marker-alt"></i>' + "石川県うるま市1丁目28-6",
       "jrchurch__date": '<i class="far fa-calendar-alt"></i>' + "日曜, 9月19日, 10:00 AM JST(In-progress)",
       "jrchurch__description": "子供たちが神について学ぶためのジュニアチャーチにぜひ参加してください！",
