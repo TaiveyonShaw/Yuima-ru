@@ -137,6 +137,7 @@ const contact__emailEl = document.querySelector('.contact__email');
 const contact__addressEl = document.querySelector('.contact__address');
 const underconstructionEl = document.querySelector('.underconstruction');
  
+// Loading updated dates for first time load
 window.addEventListener("load", () => {
    document.querySelector('.biblestudy__date').innerHTML = '<i class="far fa-calendar-alt"></i>' + "Tue, " + months[nextTuesday.getMonth()] + " " + nextTuesday.getDate().toString() + ", 9:30AM JST";
    document.querySelector('.worship__date').innerHTML = '<i class="far fa-calendar-alt"></i>' + "Sun, " + months[nextSunday.getMonth()] + " " + nextSunday.getDate().toString() + ", 10:00AM JST";
