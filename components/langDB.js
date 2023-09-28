@@ -1,7 +1,7 @@
 // Date Constructor
 const date = new Date();
 
-const months = ["none", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 // Date Automation
 const sunday = 7 - date.getDay();
