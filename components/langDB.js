@@ -1,14 +1,15 @@
 // Date Constructor
-const date = new Date();
+const tuesdate = new Date("September 28, 2023 01:15:00");
+const sundate = new Date("September 28, 2023 01:15:00");
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 // Date Automation
-const sunday = 7 - date.getDay();
-const tuesday = 7 - date.getDay() - 2;
+const sunday = 7 - sundate.getDay();
+const tuesday = 7 - tuesdate.getDay() + 2;
 
-const nextSunday = new Date(date.setDate(date.getDate() + sunday));
-const nextTuesday = new Date(date.setDate(date.getDate() + tuesday));
+const nextSunday = new Date(sundate.setDate(sundate.getDate() + sunday));
+const nextTuesday = new Date(tuesdate.setDate(tuesdate.getDate() + tuesday));
 
 //  Language Selection variables
 const langEl = document.querySelector('.langWrap');
@@ -401,7 +402,7 @@ let data = {
       "biblestudy__location": "石川、沖縄",
       "biblestudy__time": "火曜日, 09:30午前",
       "biblestudy__address": '<i class="fas fa-map-marker-alt"></i>' + "石川県うるま市1丁目28-6",
-      "biblestudy__date": '<i class="far fa-calendar-alt"></i>' + "火曜日, " + (nextSunday.getMonth() + 1) + "月" + nextTuesday.getDate().toString() + "日, 9:30午前",
+      "biblestudy__date": '<i class="far fa-calendar-alt"></i>' + "火曜日, " + (nextTuesday.getMonth() + 1) + "月" + nextTuesday.getDate().toString() + "日, 9:30午前",
       "biblestudy__description": "神のメッセージをより深く理解するために、聖書の勉強会にぜひご参加ください。",
       "worship__title": "主日礼拝",
       "worship__location": "石川、沖縄",
