@@ -1,6 +1,6 @@
 // Date Constructor
-const tuesdate = new Date("September 28, 2023 01:15:00");
-const sundate = new Date("September 28, 2023 01:15:00");
+const tuesdate = new Date();
+const sundate = new Date();
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -15,8 +15,14 @@ const nextTuesday = new Date(tuesdate.setDate(tuesdate.getDate() + tuesday));
 const langEl = document.querySelector('.langWrap');
 const link = document.querySelectorAll('.languager');
 
-// Translation Class variables
+// Loading updated dates for first time load
+window.addEventListener("load", () => {
+   document.querySelector('.biblestudy__date').innerHTML = '<i class="far fa-calendar-alt"></i>' + "Tue, " + months[nextTuesday.getMonth()] + " " + nextTuesday.getDate().toString() + ", 9:30AM JST";
+   document.querySelector('.worship__date').innerHTML = '<i class="far fa-calendar-alt"></i>' + "Sun, " + months[nextSunday.getMonth()] + " " + nextSunday.getDate().toString() + ", 10:00AM JST";
+   document.querySelector('.jrchurch__date').innerHTML = '<i class="far fa-calendar-alt"></i>' + "Sun, " + months[nextSunday.getMonth()] + " " + nextSunday.getDate().toString() + ", 9:30AM JST";
+});
 
+/*=============== TRANSLATION CLASS VARIABLES ===============*/
 // Nav Section
 const nav__logoEl = document.querySelector('.nav__logo');
 const nav__homeEl = document.querySelector('.nav__home');
@@ -137,26 +143,17 @@ const contact__phoneEl = document.querySelector('.contact__phone');
 const contact__emailEl = document.querySelector('.contact__email');
 const contact__addressEl = document.querySelector('.contact__address');
 const underconstructionEl = document.querySelector('.underconstruction');
- 
-// Loading updated dates for first time load
-window.addEventListener("load", () => {
-   document.querySelector('.biblestudy__date').innerHTML = '<i class="far fa-calendar-alt"></i>' + "Tue, " + months[nextTuesday.getMonth()] + " " + nextTuesday.getDate().toString() + ", 9:30AM JST";
-   document.querySelector('.worship__date').innerHTML = '<i class="far fa-calendar-alt"></i>' + "Sun, " + months[nextSunday.getMonth()] + " " + nextSunday.getDate().toString() + ", 10:00AM JST";
-   document.querySelector('.jrchurch__date').innerHTML = '<i class="far fa-calendar-alt"></i>' + "Sun, " + months[nextSunday.getMonth()] + " " + nextSunday.getDate().toString() + ", 9:30AM JST";
- });
 
 // Translation
 link.forEach(el => {
    el.addEventListener('click', () => {
-
       // Select Language
       langEl.querySelector('.langActive').classList.remove('langActive');
       el.classList.add('langActive');
+            
+      const attr = el.getAttribute('lang');
 
-      const attr = el.getAttribute('language');
-
-      // Translation
-      
+      /*=============== TRANSLATION HTML ===============*/
       // Nav Bar
       nav__logoEl.innerHTML = data[attr].nav__logo;
       nav__homeEl.innerHTML = data[attr].nav__home;
@@ -265,9 +262,9 @@ link.forEach(el => {
    });
 });
 
-// Translated Data Variable
+// Translation
 let data = {
-   "english": 
+   "en": 
    {
     "nav__logo": "Yuima-ru",
     "nav__home": "Home",
@@ -358,7 +355,7 @@ let data = {
     "contact__address": "Address",
     "underconstruction": "*Socials currently in-progress*",
   },
-   "japanese": 
+   "ja": 
    {
       "nav__logo": "ゆいまーる",
       "nav__home": "ホーム",
