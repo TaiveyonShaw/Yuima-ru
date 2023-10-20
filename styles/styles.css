@@ -132,6 +132,7 @@ img {
   text-align: center;
   font-size: var(--h1-font-size);
   margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 .main {
@@ -536,10 +537,6 @@ body.dark-theme {
 }
 
 /*=============== Announcement ===============*/
-.announcement {
-  padding-top: 8rem;
-}
-
 .announcement__container {
   display: flex;
   justify-content: center;
@@ -783,8 +780,8 @@ body.dark-theme {
 }
 
 .qualification__modal-icon {
-margin-top: 2px;
-margin-right: .45rem;
+  margin-top: 2px;
+  margin-right: .45rem;
 }
 
 .qualification__modal-button {
