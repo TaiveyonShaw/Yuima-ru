@@ -234,13 +234,11 @@
                </div>
             </div>
 
+            <div class="section__border"></div>
+
          <!--==================== Staff ====================-->
             <div class="staff__container staff section" id="staff">
-               <div class="staff__image">
-                  <img src="img/heartrock.jpeg" alt="staff image" class="staff__img">
-                  <div class="staff__shadow"></div>
-               </div>
-
+  
                <div class="staff__content container grid">
                   <div class="staff__data">
                      <h2 class="section__title staff__title">
@@ -256,6 +254,7 @@
 
                      <div class="staff__member">
                         <img src="img/kenchan.webp" alt="staff image" class="staff__perfil">
+                        <div class="staff__border"></div>
                         <span class="staff__name staff1">Ken Suzuki</span>
                         <p class="staff__description staff1__description">
                            Pastor / Missionary
@@ -264,6 +263,7 @@
 
                      <div class="staff__member">
                         <img src="img/totoro2.png" alt="staff image" class="staff__perfil">
+                        <div class="staff__border"></div>
                         <span class="staff__name staff2">
                            Hisae Suzuki
                         </span>
@@ -293,93 +293,170 @@
 
                   <!--==================== Event ====================-->
                   <div class="event__container">
-                     <div class="event__item">
-                        <div class="event__img-container">
-                           <img src="./img/bible.jpg" alt="Event image">
-                        </div>
-            
-                        <div class="event__body-container">
-                           <div class="event__overlay"></div>
-            
-                           <div class="event__section-info">
-                                 <p class="event__title biblestudy__title">Bible Study Session</p>
-                                 <div class="event__separator"></div>
-                                 <p class="event__location biblestudy__location">Ishikawa, Okinawa</p>
-                                 <p class="event__day biblestudy__time">Tuesday, 09:30 AM JST</p>
 
-                                 <div class="event__additional-info">
-                                    <p class="event__info biblestudy__address">
-                                       <i class="fas fa-map-marker-alt"></i>
-                                       1-chōme-28-6 Ishikawa Uruma
-                                    </p>
-            
-                                    <p class="event__info biblestudy__date" id="testcase">
-                                    a</p>
+                     <div class="card__container">
+                        <!-- Bible Study -->
+                        <article class="card__article">
+                           <img src="img/bible.jpg" alt="Bible Study" class="card__img">
 
-                                    <p class="event__info event__description biblestudy__description">
-                                       Come join us for a Bible study session to better understand god's message!
-                                    </p>
+                           <div class="card__data">
+                              <span class="card__description"></span>
+                              <h2 class="card__title biblestudy__title">Bible Study Session</h2>
+
+                              <p class="event__info biblestudy__location">
+                                 <i class="fas fa-map-marker-alt qualification__modal-icon"></i>
+                                 Ishikawa, Uruma, Okinawa
+                              </p>
+                              
+                              <p class="event__info biblestudy__date"></p>
+                              
+                              <span class="card__button button biblestudy__modal">
+                                 Read More 
+                                 <i class="ri-arrow-right-line"></i>
+                              </span>
+
+                              <div class="qualification__modal">
+                                 <div class="qualification__modal-content">
+                                    <img src="img/bible.jpg" alt="Bible Study" class="modal__img">
+                                    <h3 class="qualification__modal-title biblestudy__title-modal">Bible Study Session</h3>
+                                   <i class="ri-close-line qualification__modal-close"></i>
+           
+                                   <ul class="qualification__modal-qualifications grid">
+           
+                                     <li class="qualification__modal-qualification">
+                                       <p class="biblestudy__description">
+                                          Come join us for a Bible study session to better understand god's message!
+                                       </p>                                       
+                                     </li>
+           
+                                     <li class="qualification__modal-qualification">
+                                       <p class="biblestudy__address">
+                                          <i class="ri-map-pin-line"></i>
+                                          <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="address__button" target="_blank">
+                                             Address: 1-chōme-28-6 Ishikawa <br> Uruma, Okinawa 〒904-1106
+                                          </a>
+                                       </p>                                       
+                                     </li>
+           
+                                     <li class="qualification__modal-qualification">
+                                       <p class="event__info biblestudy__date-modal address__button biblestudy__time"></p>                    
+                                     </li>
+
+                                   </ul>
                                  </div>
+                               </div>
+                               
                            </div>
-                        </div>
-                     </div>
+                        </article>
 
-                     <div class="event__item">
-                        <div class="event__img-container">
-                           <img src="./img/worship.jpg" alt="Event image">
-                        </div>
-            
-                        <div class="event__body-container">
-                           <div class="event__overlay"></div>
-            
-                           <div class="event__section-info">
-                                 <p class="event__title worship__title">Worship Service</p>
-                                 <div class="event__separator"></div>
-                                 <p class="event__location worship__location">Ishikawa, Okinawa</p>
-                                 <p class="event__day worship__time">Sunday, 10:00 AM JST</p>
-            
-                                 <div class="event__additional-info">
-                                    <p class="event__info worship__address">
-                                       <i class="fas fa-map-marker-alt"></i>
-                                       1-chōme-28-6 Ishikawa Uruma
-                                    </p>
-                                    <p class="event__info worship__date"></p>
-            
-                                    <p class="event__info event__description worship__description">
-                                       Come join us for a Worship Service and Jr. Church to learn about god together!
-                                    </p>
-                                 </div>
-                           </div>
-                        </div>
-                     </div>
+                        <!-- Sunday Service -->
+                        <article class="card__article">
+                           <img src="img/worship.jpg" alt="Bible Study" class="card__img">
 
-                     <div class="event__item">
-                        <div class="event__img-container">
-                           <img src="./img/jr-church.png" alt="Event image">
-                        </div>
-            
-                        <div class="event__body-container">
-                           <div class="event__overlay"></div>
-            
-                           <div class="event__section-info">
-                                 <p class="event__title jrchurch__title">Jr. Church</p>
-                                 <div class="event__separator"></div>
-                                 <p class="event__location jrchurch__location">Ishikawa, Okinawa</p>
-                                 <p class="event__day jrchurch__time">Sunday, 09:30 AM JST</p>
-            
-                                 <div class="event__additional-info">
-                                    <p class="event__info jrchurch__address">
-                                       <i class="fas fa-map-marker-alt"></i>
-                                       1-chōme-28-6 Ishikawa Uruma
-                                    </p>
-                                    <p class="event__info jrchurch__date"></p>
-            
-                                    <p class="event__info event__description jrchurch__description">
-                                       Come join us for Jr. Church for kids to learn about god!
-                                    </p>
+                           <div class="card__data">
+                              <span class="card__description"></span>
+                              <h3 class="card__title worship__title">Worship Service</h3>
+
+                              <p class="worship__location">
+                                 <i class="fas fa-map-marker-alt qualification__modal-icon"></i>
+                                 Ishikawa, Uruma, Okinawa
+                              </p>
+                              
+                              <p class="event__info worship__date"></p>
+                              
+                              <span class="card__button button worship__modal">
+                                 Read More 
+                                 <i class="ri-arrow-right-line"></i>
+                              </span>
+
+                              <div class="qualification__modal">
+                                 <div class="qualification__modal-content">
+                                   <img src="img/worship.jpg" alt="Bible Study" class="modal__img">
+                                   <h3 class="qualification__modal-title worship__modaltitle">Worship Service</h3>
+                                   <i class="ri-close-line qualification__modal-close"></i>
+           
+                                   <ul class="qualification__modal-qualifications grid">
+           
+                                    <li class="qualification__modal-qualification">
+                                       <p class="qualification__description worship__description">
+                                          Come join us for Sunday Worship Service to learn about god together!
+                                       </p>                                       
+                                     </li>
+           
+                                     <li class="qualification__modal-qualification">
+                                       <p class="event__info worship__address">
+                                          <i class="ri-map-pin-line"></i>
+                                          <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="address__button" target="_blank">
+                                             Address: 1-chōme-28-6 Ishikawa <br> Uruma, Okinawa 〒904-1106
+                                          </a>
+                                       </p>                                       
+                                     </li>
+           
+                                     <li class="qualification__modal-qualification">
+                                       <p class="event__info worship__date-modal address__button worship__time"></p>
+                                     </li>
+           
+                                   </ul>
                                  </div>
+                               </div>
+
                            </div>
-                        </div>
+                        </article>
+
+                        <!-- Jr. Church -->
+                        <article class="card__article">
+                           <img src="img/jr-church.png" alt="Bible Study" class="card__img">
+
+                           <div class="card__data">
+                              <span class="card__description"></span>
+                              <h2 class="card__title jrchurch__title">Jr. Church (English Only)</h2>
+
+                              <p class="jrchurch__location">
+                                 <i class="fas fa-map-marker-alt qualification__modal-icon"></i>
+                                 Ishikawa, Uruma, Okinawa
+                              </p>
+                              
+                              <p class="jrchurch__date"></p>
+                              
+                              <span class="card__button button jrchurch__modal">
+                                 Read More
+                                 <i class="ri-arrow-right-line"></i>
+                              </span>
+
+                              <div class="qualification__modal">
+                                    <div class="qualification__modal-content">
+                                    <img src="img/jr-church.png" alt="Jr Church" class="modal__img">
+                                    <h3 class="qualification__modal-title jrchurch__modaltitle">Junior Church (English Only)</h3>
+                                    <i class="ri-close-line qualification__modal-close"></i>
+           
+                                   <ul class="qualification__modal-qualifications grid">
+           
+                                    <li class="qualification__modal-qualification">
+                                       <p class="qualification__description jrchurch__description">
+                                          Come join us for Jr. Church for kids to learn about god!
+                                       </p>                                       
+                                     </li>
+           
+                                     <li class="qualification__modal-qualification">
+                                       <p class="jrchurch__address">
+                                          <i class="ri-map-pin-line"></i>
+                                          <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="address__button" target="_blank">
+                                             Address: 1-chōme-28-6 Ishikawa <br> Uruma, Okinawa 〒904-1106
+                                          </a>
+                                       </p>                                       
+                                     </li>
+           
+                                     <li class="qualification__modal-qualification">
+                                          <p class="jrchurch__date-modal address__button jrchurch__time"></p>
+                                     </li>
+
+           
+                                   </ul>
+                                 </div>
+                               </div>
+
+                           </div>
+                        </article>
                      </div>
 
                   </div>
