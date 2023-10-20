@@ -1,15 +1,11 @@
-// Date Constructor
-const tuesdate = new Date();
-const sundate = new Date();
-
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 // Date Automation
-const sunday = 7 - sundate.getDay();
-const tuesday = 7 - tuesdate.getDay() + 2;
+const sunday = 7 - new Date().getDay();
+const tuesday = 7 - new Date().getDay() + 2;
 
-const nextSunday = new Date(sundate.setDate(sundate.getDate() + sunday));
-const nextTuesday = new Date(tuesdate.setDate(tuesdate.getDate() + tuesday));
+const nextSunday = new Date(new Date().setDate(new Date().getDate() + sunday));
+const nextTuesday = new Date(new Date().setDate(new Date().getDate() + tuesday));
 
 // Loading updated dates for first time load
 window.addEventListener("load", () => {
