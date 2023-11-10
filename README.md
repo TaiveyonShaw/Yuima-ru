@@ -1,5 +1,5 @@
 # Yuima-ru Christian Church
-A Website for Yuima-ru Christian Church in Ishikawa, Okinawa
+> A Website for Yuima-ru Christian Church in Ishikawa, Okinawa
 
 ## Bugs / Issues:
 
