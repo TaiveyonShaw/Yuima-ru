@@ -14,7 +14,7 @@ To run this Project locally, I used:
 * npm
 * http-server
 
-##### As a dependency in your npm package:
+#### As a dependency in your npm package:
 ```
 $ npm install http-server
 ```
