@@ -20,7 +20,6 @@ $ npm install http-server
 
 # If you wish to install globally:
 $ npm install --global http-server
-
 ```
 	
 ## Start
