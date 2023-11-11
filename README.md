@@ -6,7 +6,7 @@
 * [Start](#Start)
 
 ## Intro
-A Website for Yuima-ru Christian Church in Ishikawa, Okinawa
+A simple responsive SPA Website for Yuima-ru Christian Church in Ishikawa, Okinawa
 
 ## Installation
 To run this Project locally, I used:
