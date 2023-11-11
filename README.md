@@ -1,4 +1,4 @@
-# Yuima-ru Christian Church
+# Yuima-ru Christian Church / ゆいまーるキリスト教会
 
 ## Table of contents
 * [Introduction](#Intro)
