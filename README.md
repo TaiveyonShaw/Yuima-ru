@@ -3,10 +3,10 @@
 ## Table of contents
 * [Introduction](#Intro)
 * [Installation](#Installation)
-* [Start](#start)
+* [Start](#Start)
 
 ## Intro
-> A Website for Yuima-ru Christian Church in Ishikawa, Okinawa
+A Website for Yuima-ru Christian Church in Ishikawa, Okinawa
 
 ## Installation
 To run this Project locally, I used:
@@ -23,7 +23,7 @@ $ npm install --global http-server
 
 ```
 	
-## start
+## Start
 To run this project using http-server:
 
 ```
