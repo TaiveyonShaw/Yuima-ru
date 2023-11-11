@@ -27,7 +27,7 @@ $ npm install --global http-server
 ## Start
 To run this project using http-server:
 
-#### Navigate to root of the repository and then:
+#### Navigate to root of the repository, then run:
 ```
 $ http-server
 ```
