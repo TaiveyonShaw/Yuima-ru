@@ -1,699 +1,855 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!--=============== FAVICON ===============-->
+    <!--=============== FAVICON ===============-->
 
-      <!-- Change Logo to the cross or something like that -->
-      <link rel="shortcut icon" href="img/sunflower.png" type="image/x-icon">
+    <!-- Change Logo to the cross or something like that -->
+    <link rel="shortcut icon" href="img/sunflower.png" type="image/x-icon" />
 
-      <!--=============== REMIXICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="styles/styles.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles/styles.css" />
 
-      <!--=============== Google Fonts ===============-->
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--=============== Google Fonts ===============-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-      <!--=============== Ajax library ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!--=============== Ajax library ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 
-      <!--=============== Title ===============-->
-      <title>ゆいまーる石川キリスト教会 | Yuima-ru Ishikawa Christian Church | Yuimaru Christian Church | Ishikawa Church | Okinawa Church | Yuimaru Church | Christian Church </title>
-   </head>
+    <!--=============== Title ===============-->
+    <title>
+      ゆいまーる石川キリスト教会 | Yuima-ru Ishikawa Christian Church | Yuimaru
+      Christian Church | Ishikawa Church | Okinawa Church | Yuimaru Church |
+      Christian Church
+    </title>
+  </head>
 
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">
-               Yuima-ru
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> Yuima-ru </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <i class="ri-home-2-line"></i>
+              <a href="#" class="nav__link active-link nav__home">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="ri-information-line"></i>
+              <a href="#about" class="nav__link nav__about">About</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="ri-calendar-event-fill"></i>
+              <a href="#schedule" class="nav__link nav__schedule">Schedule</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="ri-map-pin-line"></i>
+              <a href="#location" class="nav__link nav__location">Location</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="ri-chat-3-line"></i>
+              <a href="#contact" class="nav__link nav__contact">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Language Change -->
+          <div class="langWrap">
+            <a lang="en" class="langActive languager">
+              <img src="img/langEN.png" alt="USA Flag" class="flag__img" />
+              English
             </a>
-
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <i class="ri-home-2-line"></i>
-                     <a href="#home" class="nav__link active-link nav__home">Home</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <i class="ri-information-line"></i>
-                     <a href="#about" class="nav__link nav__about">About</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <i class="ri-calendar-event-fill"></i>
-                     <a href="#schedule" class="nav__link nav__schedule">Schedule</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <i class="ri-map-pin-line"></i>
-                     <a href="#location" class="nav__link nav__location">Location</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <i class="ri-chat-3-line"></i>
-                     <a href="#contact" class="nav__link nav__contact">Contact Us</a>
-                  </li>
-               </ul>
-               
-               <!-- Close button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
-            </div>
-                        
-            <div class="nav__btns">
-               <!-- Language Change -->
-               <div class="langWrap">
-                  <a lang="en" class="langActive languager">
-                     <img src="img/langEN.png" alt="USA Flag" class="flag__img">
-                     English
-                  </a>
-                  <a  lang="ja" class="languager">
-                     <img src="img/langJP.png" alt="Japan Flag" class="flag__img">
-                     日本語
-                  </a>
-               </div>
-               
-               <!-- Theme Change -->
-               <i class="ri-moon-clear-line change-theme" id="theme-button"></i>
-
-               <!-- Toggle Button -->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-fill"></i>
-               </div>
-            </div>
-         </nav>
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <img src="img/kouri jim.jpg" alt="home image" class="home__bg">
-
-            <div class="home__container container grid">
-               <div class="home__data">
-                  <h3 class="home__subtitle">
-                     The Spirit of Cooperation
-                  </h3>
-
-                  <h1 class="home__title">
-                     Yuima-ru Ishikawa Christian Church
-                  </h1>
-
-                  <p class="home__description">
-                     Come join us in Ishikawa, Okinawa
-                     to learn about Christ with our
-                     Pastor, Ken Suzuki.
-                  </p>
-
-                  <a href="#about" class="button home__button">
-                     Learn more about us! <i class="ri-arrow-right-line"></i>
-                  </a>
-               </div>
-
-            </div>
-         </section>
-
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-               <div class="about__container container grid">
-                  <img src="img/lshisa.png" alt="Shisa" class="test">
-                  <div class="about__data">
-                     <h2 class="section__title about__title">
-                        About Us
-                     </h2>
-                     
-                     <div class="about__description">
-                        <h3 class="about__announcement__description">
-                           <b>"Let us love each other as Jesus has loved us!"</b>
-                        </h3>
-
-                        <a href="#announcement" class="button about__announcement__button">
-                           Check our Announcements <i class="ri-arrow-right-line"></i>
-                        </a>
-
-                        <h3 class="about__location__title">Where are we?</h3>
-
-                        <p class="about__location__description">
-                           We are a small and newly founded church located in Ishikawa!
-                           Come Join us to praise the lord with us!
-                        </p>
-                        
-                        <a href="#location" class="button about__location">
-                           See our Location <i class="ri-arrow-right-line"></i>
-                        </a>
-                        
-                        <h3 class="about__schedule__title">When should I come?</h3>
-
-                        <p class="about__schedule__description">
-                           Please come 5 minutes before service to prepare and be seated for the service! See our schedule below for more details! 
-                        </p>
-
-                        <a href="#schedule" class="button about__schedule">
-                           See our Schedule <i class="ri-arrow-right-line"></i>
-                        </a>
-                        
-                     </div>
-                     
-                  </div>
-
-                  <img src="img/rshisa.png" alt="Shisa" class="test">
-
-               </div>
-
-            <div class="section__border"></div>
-
-            <!--==================== Announcement ====================-->
-            <div class="announcement__container announcement" id="announcement">
-               <div class="announcement__content container">
-
-                  <div class="announcement__section">
-                     <h2 class="section__title announcement__title">
-                        Announcements
-                     </h2>
-
-                     <p class="announcement__subtitle">
-                        Weekly Announcements
-                     </p>
-                  </div>
-
-                  <div class="announcement__box grid">
-                     <img src="img/right-announcement.png" alt="Right Announcement Image" class="test">
-                     <div class="announcement__items">
-                        <div class="announcement__item">
-
-                           <div class="announcement__info">
-                              <h2 class="announcement__item-title sunday__title">Sunday Service</h2>
-                              <p class="sunday__description">We will have service every Sunday at 10:00pm</p>
-                           </div>
-                        </div>
-
-                        <div class="announcement__item">
-
-                           <div class="announcement__info">
-                              <h2 class="announcement__item-title lunch__title">Join us for Lunch</h2>
-                              <p class="lunch__description">After the service, we will prepare lunch. Please join us!</p>
-                           </div>
-                        </div>
-
-                        <div class="announcement__item">
-
-                           <div class="announcement__info">
-                              <h2 class="announcement__item-title templocation__title">Location until Heat Cools Down</h2>
-                              <p class="templocation__description">The address will temporarily be at: <br> Uruma-shi Ishikawa 2107-8 (Pastor's house)</p>
-                           </div>
-                        </div>
-
-                        <div class="announcement__item">
-
-                           <div class="announcement__info">
-                              <h2 class="announcement__item-title prayer__title">Prayer Requests</h2>
-                              <p class="prayer__description">
-                                 - For the city of Uruma.
-                                 <br>
-                                 - Family and Friends for salvation.
-                                 <br>
-                                 - For Peace in Israel.
-                                 <br>
-                                 - For peace between Russian and Ukraine
-                              </p>
-                           </div>
-                        </div>
-
-                     </div>
-                     <img src="img/left-announcement.png" alt="Left Announcement Picture" class="test">
-                  </div>
-
-               </div>
-            </div>
-
-            <div class="section__border"></div>
-
-         <!--==================== Staff ====================-->
-            <div class="staff__container staff section" id="staff">
-  
-               <div class="staff__content container grid">
-                  <div class="staff__data">
-                     <h2 class="section__title staff__title">
-                        Meet our Staff Members
-                     </h2>
-
-                     <p class="staff__description staff__subtitle">
-                        Learn about our Staff Members
-                     </p>
-                  </div>
-
-                  <div class="staff__member-container">
-
-                     <div class="staff__member">
-                        <img src="img/kenchan.webp" alt="staff image" class="staff__perfil">
-                        <div class="staff__border"></div>
-                        <span class="staff__name staff1">Ken Suzuki</span>
-                        <p class="staff__description staff1__description">
-                           Pastor / Missionary
-                        </p>
-                     </div>
-
-                     <div class="staff__member">
-                        <img src="img/totoro2.png" alt="staff image" class="staff__perfil">
-                        <div class="staff__border"></div>
-                        <span class="staff__name staff2">
-                           Hisae Suzuki
-                        </span>
-                        <p class="staff__description staff2__description">
-                           Assistant
-                        </p>
-                     </div>
-
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <div class="section__border"></div>
-
-         <!--==================== Schedule ====================-->
-         <section class="schedule section" id="schedule">
-            <div class="schedule__container container">
-               <div class="schedule__data">
-                  <h2 class="section__title schedule__title">
-                     Schedule
-                  </h2>
-
-                  <p class="schedule__description schedule__subtitle">
-                     Weekly Schedule
-                  </p>
-
-                  <!--==================== Event ====================-->
-                  <div class="event__container">
-
-                     <div class="card__container">
-                        <!-- Bible Study -->
-                        <article class="card__article">
-                           <img src="img/bible.jpg" alt="Bible Study" class="card__img">
-
-                           <div class="card__data">
-                              <span class="card__description"></span>
-                              <h2 class="card__title biblestudy__title">Bible Study Session</h2>
-
-                              <p class="event__info biblestudy__location">
-                                 <i class="fas fa-map-marker-alt qualification__modal-icon"></i>
-                                 Ishikawa, Uruma, Okinawa
-                              </p>
-                              
-                              <p class="event__info biblestudy__date"></p>
-                              
-                              <span class="card__button button biblestudy__modal">
-                                 Read More 
-                                 <i class="ri-arrow-right-line"></i>
-                              </span>
-
-                              <div class="qualification__modal">
-                                 <div class="qualification__modal-content">
-                                    <img src="img/bible.jpg" alt="Bible Study" class="modal__img">
-                                    <h3 class="qualification__modal-title biblestudy__title-modal">Bible Study Session</h3>
-                                   <i class="ri-close-line qualification__modal-close"></i>
-           
-                                   <ul class="qualification__modal-qualifications grid">
-           
-                                     <li class="qualification__modal-qualification">
-                                       <p class="biblestudy__description">
-                                          Come join us for a Bible study session to better understand god's message!
-                                       </p>                                       
-                                     </li>
-           
-                                     <li class="qualification__modal-qualification">
-                                       <p class="biblestudy__address">
-                                          <i class="ri-map-pin-line"></i>
-                                          <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="address__button" target="_blank">
-                                             Address: 1-chōme-28-6 Ishikawa <br> Uruma, Okinawa 〒904-1106
-                                          </a>
-                                       </p>                                       
-                                     </li>
-           
-                                     <li class="qualification__modal-qualification">
-                                       <p class="event__info biblestudy__date-modal address__button biblestudy__time"></p>                    
-                                     </li>
-
-                                   </ul>
-                                 </div>
-                               </div>
-                               
-                           </div>
-                        </article>
-
-                        <!-- Sunday Service -->
-                        <article class="card__article">
-                           <img src="img/worship.jpg" alt="Bible Study" class="card__img">
-
-                           <div class="card__data">
-                              <span class="card__description"></span>
-                              <h3 class="card__title worship__title">Worship Service</h3>
-
-                              <p class="worship__location">
-                                 <i class="fas fa-map-marker-alt qualification__modal-icon"></i>
-                                 Ishikawa, Uruma, Okinawa
-                              </p>
-                              
-                              <p class="event__info worship__date"></p>
-                              
-                              <span class="card__button button worship__modal">
-                                 Read More 
-                                 <i class="ri-arrow-right-line"></i>
-                              </span>
-
-                              <div class="qualification__modal">
-                                 <div class="qualification__modal-content">
-                                   <img src="img/worship.jpg" alt="Bible Study" class="modal__img">
-                                   <h3 class="qualification__modal-title worship__modaltitle">Worship Service</h3>
-                                   <i class="ri-close-line qualification__modal-close"></i>
-           
-                                   <ul class="qualification__modal-qualifications grid">
-           
-                                    <li class="qualification__modal-qualification">
-                                       <p class="qualification__description worship__description">
-                                          Come join us for Sunday Worship Service to learn about god together!
-                                       </p>                                       
-                                     </li>
-           
-                                     <li class="qualification__modal-qualification">
-                                       <p class="event__info worship__address">
-                                          <i class="ri-map-pin-line"></i>
-                                          <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="address__button" target="_blank">
-                                             Address: 1-chōme-28-6 Ishikawa <br> Uruma, Okinawa 〒904-1106
-                                          </a>
-                                       </p>                                       
-                                     </li>
-           
-                                     <li class="qualification__modal-qualification">
-                                       <p class="event__info worship__date-modal address__button worship__time"></p>
-                                     </li>
-           
-                                   </ul>
-                                 </div>
-                               </div>
-
-                           </div>
-                        </article>
-
-                        <!-- Jr. Church -->
-                        <article class="card__article">
-                           <img src="img/jr-church.png" alt="Bible Study" class="card__img">
-
-                           <div class="card__data">
-                              <span class="card__description"></span>
-                              <h2 class="card__title jrchurch__title">Jr. Church (English Only)</h2>
-
-                              <p class="jrchurch__location">
-                                 <i class="fas fa-map-marker-alt qualification__modal-icon"></i>
-                                 Ishikawa, Uruma, Okinawa
-                              </p>
-                              
-                              <p class="jrchurch__date"></p>
-                              
-                              <span class="card__button button jrchurch__modal">
-                                 Read More
-                                 <i class="ri-arrow-right-line"></i>
-                              </span>
-
-                              <div class="qualification__modal">
-                                    <div class="qualification__modal-content">
-                                    <img src="img/jr-church.png" alt="Jr Church" class="modal__img">
-                                    <h3 class="qualification__modal-title jrchurch__modaltitle">Junior Church (English Only)</h3>
-                                    <i class="ri-close-line qualification__modal-close"></i>
-           
-                                   <ul class="qualification__modal-qualifications grid">
-           
-                                    <li class="qualification__modal-qualification">
-                                       <p class="qualification__description jrchurch__description">
-                                          Come join us for Jr. Church for kids to learn about god!
-                                       </p>                                       
-                                     </li>
-           
-                                     <li class="qualification__modal-qualification">
-                                       <p class="jrchurch__address">
-                                          <i class="ri-map-pin-line"></i>
-                                          <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="address__button" target="_blank">
-                                             Address: 1-chōme-28-6 Ishikawa <br> Uruma, Okinawa 〒904-1106
-                                          </a>
-                                       </p>                                       
-                                     </li>
-           
-                                     <li class="qualification__modal-qualification">
-                                          <p class="jrchurch__date-modal address__button jrchurch__time"></p>
-                                     </li>
-
-           
-                                   </ul>
-                                 </div>
-                               </div>
-
-                           </div>
-                        </article>
-                     </div>
-
-                  </div>
-
-               </div>
-            </div>
-         </section>
-
-         <div class="section__border"></div>
-
-         <!--==================== Location ====================-->
-         <section class="location section" id="location">
-            <h2 class="section__title location__title">
-               Location
-            </h2>
-            
-            <p class="location__description">
-               Where are we located?
+            <a lang="ja" class="languager">
+              <img src="img/langJP.png" alt="Japan Flag" class="flag__img" />
+              日本語
+            </a>
+          </div>
+
+          <!-- Theme Change -->
+          <i class="ri-moon-clear-line change-theme" id="theme-button"></i>
+
+          <!-- Toggle Button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-fill"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <img src="img/kouri jim.jpg" alt="home image" class="home__bg" />
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h3 class="home__subtitle">The Spirit of Cooperation</h3>
+
+            <h1 class="home__title">Yuima-ru Ishikawa Christian Church</h1>
+
+            <p class="home__description">
+              Come join us in Ishikawa, Okinawa to learn about Christ with our
+              Pastor, Ken Suzuki.
             </p>
 
-            <div class="google__map">
-               <iframe class="google__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.3422472092581!2d127.82783054204205!3d26.429971634988856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5055dbb56df85%3A0x372090e99bce4af2!2s1-ch%C5%8Dme-28-7%20Ishikawa%2C%20Uruma%2C%20Okinawa%20904-1106!5e1!3m2!1sen!2sjp!4v1694242501806!5m2!1sen!2sjp" width="800" height="600" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank"></iframe>
+            <a href="#about" class="button home__button">
+              Learn more about us! <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <img src="img/lshisa.png" alt="Shisa" class="test" />
+          <div class="about__data">
+            <h2 class="section__title about__title">About Us</h2>
+
+            <div class="about__description">
+              <h3 class="about__announcement__description">
+                <b>"Let us love each other as Jesus has loved us!"</b>
+              </h3>
+
+              <a
+                href="#announcement"
+                class="button about__announcement__button"
+              >
+                Check our Announcements <i class="ri-arrow-right-line"></i>
+              </a>
+
+              <h3 class="about__location__title">Where are we?</h3>
+
+              <p class="about__location__description">
+                We are a small and newly founded church located in Ishikawa!
+                Come Join us to praise the lord with us!
+              </p>
+
+              <a href="#location" class="button about__location">
+                See our Location <i class="ri-arrow-right-line"></i>
+              </a>
+
+              <h3 class="about__schedule__title">When should I come?</h3>
+
+              <p class="about__schedule__description">
+                Please come 5 minutes before service to prepare and be seated
+                for the service! See our schedule below for more details!
+              </p>
+
+              <a href="#schedule" class="button about__schedule">
+                See our Schedule <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <img src="img/rshisa.png" alt="Shisa" class="test" />
+        </div>
+
+        <div class="section__border"></div>
+
+        <!--==================== Announcement ====================-->
+        <div class="announcement__container announcement" id="announcement">
+          <div class="announcement__content container">
+            <div class="announcement__section">
+              <h2 class="section__title announcement__title">Announcements</h2>
+
+              <p class="announcement__subtitle">Weekly Announcements</p>
             </div>
 
-            <div class="location__container">
-               <img src="img/left-location.png" alt="Left Location Image">
-               <div>
-                  <h3 class="location__address">
-                     Address: 1-chōme-28-6 Ishikawa
-                     Uruma, Okinawa 〒904-1106
-                  </h3>
-                  <p class="location__disclaimer">
-                     Note: The building is left of this building. 
-                     Google maps for unknown reason has not recognized 
-                     this address yet. <br> <br>
-                     Sorry for the inconvenience and confusion.
-                  </p>  
-               </div>
-               <img src="img/right-location.png" alt="Right Location Image">
+            <div class="announcement__box grid">
+              <img
+                src="img/right-announcement.png"
+                alt="Right Announcement Image"
+                class="test"
+              />
+              <div class="announcement__items">
+                <div class="announcement__item">
+                  <div class="announcement__info">
+                    <h2 class="announcement__item-title sunday__title">
+                      Sunday Service
+                    </h2>
+                    <p class="sunday__description">
+                      We will have service every Sunday at 10:00pm
+                    </p>
+                  </div>
+                </div>
+
+                <div class="announcement__item">
+                  <div class="announcement__info">
+                    <h2 class="announcement__item-title lunch__title">
+                      Join us for Lunch
+                    </h2>
+                    <p class="lunch__description">
+                      After the service, we will prepare lunch. Please join us!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="announcement__item">
+                  <div class="announcement__info">
+                    <h2 class="announcement__item-title templocation__title">
+                      Location until Heat Cools Down
+                    </h2>
+                    <p class="templocation__description">
+                      The address will temporarily be at: <br />
+                      Uruma-shi Ishikawa 2107-8 (Pastor's house)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="announcement__item">
+                  <div class="announcement__info">
+                    <h2 class="announcement__item-title prayer__title">
+                      Prayer Requests
+                    </h2>
+                    <p class="prayer__description">
+                      - For the city of Uruma.
+                      <br />
+                      - Family and Friends for salvation.
+                      <br />
+                      - For Peace in Israel.
+                      <br />
+                      - For peace between Russian and Ukraine
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="img/left-announcement.png"
+                alt="Left Announcement Picture"
+                class="test"
+              />
             </div>
-         </section>
-         
-         <div class="section__border"></div>
+          </div>
+        </div>
 
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            <h2 class="contact__section_title section__title">Contact Us</h2>
-            <span class="contact__section_subtitle">Our Contact Info</span>
-            
-            <div class="contact__box grid">
-               <img src="img/left-contact.png" alt="Left Contact Image" class="test2">
+        <div class="section__border"></div>
 
-               <div class="contact__container grid">
-                  <div class="contact__content">
-                     <h3 class="contact__title left__contact">
-                        <i class="ri-information-line"></i> Contact Information
-                     </h3>
+        <!--==================== Staff ====================-->
+        <div class="staff__container staff section" id="staff">
+          <div class="staff__content container grid">
+            <div class="staff__data">
+              <h2 class="section__title staff__title">
+                Meet our Staff Members
+              </h2>
 
-                     <div class="contact__info">
-                        <div class="contact__data">
-                           <span class="contact__data-title email__title">E-mail</span>
-                              <span class="contact__data-info">kenjiji2020@gmail.com</span>
-                              
-                              <a href="mailto: kenjiji2020@gmail.com" class="contact__button email__button" target="_blank">
-                                 E-mail Us <i class="ri-mail-line"></i>
+              <p class="staff__description staff__subtitle">
+                Learn about our Staff Members
+              </p>
+            </div>
+
+            <div class="staff__member-container">
+              <div class="staff__member">
+                <img
+                  src="img/kenchan.webp"
+                  alt="staff image"
+                  class="staff__perfil"
+                />
+                <div class="staff__border"></div>
+                <span class="staff__name staff1">Ken Suzuki</span>
+                <p class="staff__description staff1__description">
+                  Pastor / Missionary
+                </p>
+              </div>
+
+              <div class="staff__member">
+                <img
+                  src="img/totoro2.png"
+                  alt="staff image"
+                  class="staff__perfil"
+                />
+                <div class="staff__border"></div>
+                <span class="staff__name staff2"> Hisae Suzuki </span>
+                <p class="staff__description staff2__description">Assistant</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section__border"></div>
+
+      <!--==================== Schedule ====================-->
+      <section class="schedule section" id="schedule">
+        <div class="schedule__container container">
+          <div class="schedule__data">
+            <h2 class="section__title schedule__title">Schedule</h2>
+
+            <p class="schedule__description schedule__subtitle">
+              Weekly Schedule
+            </p>
+
+            <!--==================== Event ====================-->
+            <div class="event__container">
+              <div class="card__container">
+                <!-- Bible Study -->
+                <article class="card__article">
+                  <img
+                    src="img/bible.jpg"
+                    alt="Bible Study"
+                    class="card__img"
+                  />
+
+                  <div class="card__data">
+                    <span class="card__description"></span>
+                    <h2 class="card__title biblestudy__title">
+                      Bible Study Session
+                    </h2>
+
+                    <p class="event__info biblestudy__location">
+                      <i
+                        class="fas fa-map-marker-alt qualification__modal-icon"
+                      ></i>
+                      Ishikawa, Uruma, Okinawa
+                    </p>
+
+                    <p class="event__info biblestudy__date"></p>
+
+                    <span class="card__button button biblestudy__modal">
+                      Read More
+                      <i class="ri-arrow-right-line"></i>
+                    </span>
+
+                    <div class="qualification__modal">
+                      <div class="qualification__modal-content">
+                        <img
+                          src="img/bible.jpg"
+                          alt="Bible Study"
+                          class="modal__img"
+                        />
+                        <h3
+                          class="qualification__modal-title biblestudy__title-modal"
+                        >
+                          Bible Study Session
+                        </h3>
+                        <i class="ri-close-line qualification__modal-close"></i>
+
+                        <ul class="qualification__modal-qualifications grid">
+                          <li class="qualification__modal-qualification">
+                            <p class="biblestudy__description">
+                              Come join us for a Bible study session to better
+                              understand god's message!
+                            </p>
+                          </li>
+
+                          <li class="qualification__modal-qualification">
+                            <p class="biblestudy__address">
+                              <i class="ri-map-pin-line"></i>
+                              <a
+                                href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106"
+                                class="address__button"
+                                target="_blank"
+                              >
+                                Address: 1-chōme-28-6 Ishikawa <br />
+                                Uruma, Okinawa 〒904-1106
                               </a>
-                        </div>
+                            </p>
+                          </li>
 
-                        <div class="contact__data">
-                           <span class="contact__data-title phone__title">Phone Number</span>
-                              <span class="contact__data-info">+81 070-3662-8889</span>
+                          <li class="qualification__modal-qualification">
+                            <p
+                              class="event__info biblestudy__date-modal address__button biblestudy__time"
+                            ></p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </article>
 
-                              <a href="tel:+81 070-3662-8889" class="contact__button phone__button" target="_blank">
-                                 Call Us <i class="ri-phone-line"></i>
+                <!-- Sunday Service -->
+                <article class="card__article">
+                  <img
+                    src="img/worship.jpg"
+                    alt="Bible Study"
+                    class="card__img"
+                  />
+
+                  <div class="card__data">
+                    <span class="card__description"></span>
+                    <h3 class="card__title worship__title">Worship Service</h3>
+
+                    <p class="worship__location">
+                      <i
+                        class="fas fa-map-marker-alt qualification__modal-icon"
+                      ></i>
+                      Ishikawa, Uruma, Okinawa
+                    </p>
+
+                    <p class="event__info worship__date"></p>
+
+                    <span class="card__button button worship__modal">
+                      Read More
+                      <i class="ri-arrow-right-line"></i>
+                    </span>
+
+                    <div class="qualification__modal">
+                      <div class="qualification__modal-content">
+                        <img
+                          src="img/worship.jpg"
+                          alt="Bible Study"
+                          class="modal__img"
+                        />
+                        <h3
+                          class="qualification__modal-title worship__modaltitle"
+                        >
+                          Worship Service
+                        </h3>
+                        <i class="ri-close-line qualification__modal-close"></i>
+
+                        <ul class="qualification__modal-qualifications grid">
+                          <li class="qualification__modal-qualification">
+                            <p
+                              class="qualification__description worship__description"
+                            >
+                              Come join us for Sunday Worship Service to learn
+                              about god together!
+                            </p>
+                          </li>
+
+                          <li class="qualification__modal-qualification">
+                            <p class="event__info worship__address">
+                              <i class="ri-map-pin-line"></i>
+                              <a
+                                href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106"
+                                class="address__button"
+                                target="_blank"
+                              >
+                                Address: 1-chōme-28-6 Ishikawa <br />
+                                Uruma, Okinawa 〒904-1106
                               </a>
-                        </div>
+                            </p>
+                          </li>
 
-                        <div class="contact__data">
-                           <span class="contact__data-title address__title">Our Address</span>
-                              <span class="contact__data-info address__info">1-chōme-28-6 Ishikawa <br> Uruma, Okinawa <br> 〒904-1106</span>
+                          <li class="qualification__modal-qualification">
+                            <p
+                              class="event__info worship__date-modal address__button worship__time"
+                            ></p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </article>
 
-                              <a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="contact__button address__button" target="_blank">
-                                 Find our Address <i class="ri-home-2-line"></i>
+                <!-- Jr. Church -->
+                <article class="card__article">
+                  <img
+                    src="img/jr-church.png"
+                    alt="Bible Study"
+                    class="card__img"
+                  />
+
+                  <div class="card__data">
+                    <span class="card__description"></span>
+                    <h2 class="card__title jrchurch__title">
+                      Jr. Church (English Only)
+                    </h2>
+
+                    <p class="jrchurch__location">
+                      <i
+                        class="fas fa-map-marker-alt qualification__modal-icon"
+                      ></i>
+                      Ishikawa, Uruma, Okinawa
+                    </p>
+
+                    <p class="jrchurch__date"></p>
+
+                    <span class="card__button button jrchurch__modal">
+                      Read More
+                      <i class="ri-arrow-right-line"></i>
+                    </span>
+
+                    <div class="qualification__modal">
+                      <div class="qualification__modal-content">
+                        <img
+                          src="img/jr-church.png"
+                          alt="Jr Church"
+                          class="modal__img"
+                        />
+                        <h3
+                          class="qualification__modal-title jrchurch__modaltitle"
+                        >
+                          Junior Church (English Only)
+                        </h3>
+                        <i class="ri-close-line qualification__modal-close"></i>
+
+                        <ul class="qualification__modal-qualifications grid">
+                          <li class="qualification__modal-qualification">
+                            <p
+                              class="qualification__description jrchurch__description"
+                            >
+                              Come join us for Jr. Church for kids to learn
+                              about god!
+                            </p>
+                          </li>
+
+                          <li class="qualification__modal-qualification">
+                            <p class="jrchurch__address">
+                              <i class="ri-map-pin-line"></i>
+                              <a
+                                href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106"
+                                class="address__button"
+                                target="_blank"
+                              >
+                                Address: 1-chōme-28-6 Ishikawa <br />
+                                Uruma, Okinawa 〒904-1106
                               </a>
-                        </div>
-                        
-                     </div>
+                            </p>
+                          </li>
+
+                          <li class="qualification__modal-qualification">
+                            <p
+                              class="jrchurch__date-modal address__button jrchurch__time"
+                            ></p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="contact__content">
-                     <h3 class="contact__title right__contact">
-                        <i class="ri-send-plane-line"></i> Contact us!
-                     </h3>
-
-                     <form action="" class="contact__form" id="contact-form">
-                        
-                        <div class="contact__form-div">
-                           <label class="contact__form-tag form__name">Name</label>
-                              <input type="text" name="user_name" required placeholder="Write your name" class="contact__form-input" id="contact-name">
-                        </div>
-                        
-                        <div class="contact__form-div">
-                           <label class="contact__form-tag form__email">E-mail</label>
-                              <input type="text" name="user_email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
-                        </div>
-
-                        <div class="contact__form-div contact__form-area">
-                           <label class="contact__form-tag form__question">Questions</label>
-                           <textarea name="user_question" placeholder="Send us a message" id="contact-question" class="contact__form-input"></textarea>
-                        </div>
-
-                        <p class="contact__message" id="contact-message"></p>
-
-                        <button type="submit" class="contact__button submit__button">
-                           Submit <i class="ri-arrow-right-up-line"></i>
-                        </button>
-                     </form>
-                  </div>
-
-               </div>
-               <img src="img/right-contact.png" alt="Right Contact Image" class="test2">
-
+                </article>
+              </div>
             </div>
-         </section>
-      </main>
+          </div>
+        </div>
+      </section>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
-            <div class="footer__content grid">
-               <div>
-                  <a href="#" class="footer__logo">Yuima-ru</a>
+      <div class="section__border"></div>
 
-                  <p class="footer__description">
-                     The Spirit of Cooperation
-                  </p>
-               </div>
+      <!--==================== Location ====================-->
+      <section class="location section" id="location">
+        <h2 class="section__title location__title">Location</h2>
 
-               <div class="footer__data grid">
-                  <div>
-                     <h3 class="footer__title footer__about">About</h3>
+        <p class="location__description">Where are we located?</p>
 
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#about" class="footer__link about__us">About Us</a>
-                        </li>
-                        
-                        <li>
-                           <a href="#staff" class="footer__link about__staff">Meet Our Staffs</a>
-                        </li>
+        <div class="google__map">
+          <iframe
+            class="google__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.3422472092581!2d127.82783054204205!3d26.429971634988856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5055dbb56df85%3A0x372090e99bce4af2!2s1-ch%C5%8Dme-28-7%20Ishikawa%2C%20Uruma%2C%20Okinawa%20904-1106!5e1!3m2!1sen!2sjp!4v1694242501806!5m2!1sen!2sjp"
+            width="800"
+            height="600"
+            style="border: 0"
+            allowfullscreen="true"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            target="_blank"
+          ></iframe>
+        </div>
 
-                        <li>
-                           <a href="#announcement" class="footer__link about__announcement">Announcements</a>
-                        </li>
-                     
-                     </ul>
-                  </div>
+        <div class="location__container">
+          <img src="img/left-location.png" alt="Left Location Image" />
+          <div>
+            <h3 class="location__address">
+              Address: 1-chōme-28-6 Ishikawa Uruma, Okinawa 〒904-1106
+            </h3>
+            <p class="location__disclaimer">
+              Note: The building is left of this building. Google maps for
+              unknown reason has not recognized this address yet. <br />
+              <br />
+              Sorry for the inconvenience and confusion.
+            </p>
+          </div>
+          <img src="img/right-location.png" alt="Right Location Image" />
+        </div>
+      </section>
 
-                  <div>
-                     <h3 class="footer__title footer__information">Information</h3>
+      <div class="section__border"></div>
 
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#schedule" class="footer__link information__schedule">Schedules</a>
-                        </li>
-                        
-                        <li>
-                           <a href="#location" class="footer__link information__location">Location</a>
-                        </li>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="contact__section_title section__title">Contact Us</h2>
+        <span class="contact__section_subtitle">Our Contact Info</span>
 
-                     </ul>
-                  </div>
+        <div class="contact__box grid">
+          <img
+            src="img/left-contact.png"
+            alt="Left Contact Image"
+            class="test2"
+          />
 
-                  <div>
-                     <h3 class="footer__title footer__contact">Contact</h3>
+          <div class="contact__container grid">
+            <div class="contact__content">
+              <h3 class="contact__title left__contact">
+                <i class="ri-information-line"></i> Contact Information
+              </h3>
 
-                     <ul class="footer__links">
-                        <li>
-                           <a href="#contact" class="footer__link contact__phone">Phone Number</a>
-                        </li>
-                        
-                        <li>
-                           <a href="#contact" class="footer__link contact__email">E-mail</a>
-                        </li>
+              <div class="contact__info">
+                <div class="contact__data">
+                  <span class="contact__data-title email__title">E-mail</span>
+                  <span class="contact__data-info">kenjiji2020@gmail.com</span>
 
-                        <li>
-                           <a href="#contact" class="footer__link contact__address">Address</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
+                  <a
+                    href="mailto: kenjiji2020@gmail.com"
+                    class="contact__button email__button"
+                    target="_blank"
+                  >
+                    E-mail Us <i class="ri-mail-line"></i>
+                  </a>
+                </div>
+
+                <div class="contact__data">
+                  <span class="contact__data-title phone__title"
+                    >Phone Number</span
+                  >
+                  <span class="contact__data-info">+81 070-3662-8889</span>
+
+                  <a
+                    href="tel:+81 070-3662-8889"
+                    class="contact__button phone__button"
+                    target="_blank"
+                  >
+                    Call Us <i class="ri-phone-line"></i>
+                  </a>
+                </div>
+
+                <div class="contact__data">
+                  <span class="contact__data-title address__title"
+                    >Our Address</span
+                  >
+                  <span class="contact__data-info address__info"
+                    >1-chōme-28-6 Ishikawa <br />
+                    Uruma, Okinawa <br />
+                    〒904-1106</span
+                  >
+
+                  <a
+                    href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106"
+                    class="contact__button address__button"
+                    target="_blank"
+                  >
+                    Find our Address <i class="ri-home-2-line"></i>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <div class="footer__group">
-               <div class="footer__social">
-                  <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
-                     <i class="ri-facebook-line"></i>
-                  </a>
+            <div class="contact__content">
+              <h3 class="contact__title right__contact">
+                <i class="ri-send-plane-line"></i> Contact us!
+              </h3>
 
-                  <a href="https://www.instagram.com" target="_blank" class="footer__social-link">
-                     <i class="ri-instagram-line"></i>
-                  </a>
+              <form action="" class="contact__form" id="contact-form">
+                <div class="contact__form-div">
+                  <label class="contact__form-tag form__name">Name</label>
+                  <input
+                    type="text"
+                    name="user_name"
+                    required
+                    placeholder="Write your name"
+                    class="contact__form-input"
+                    id="contact-name"
+                  />
+                </div>
 
-                  <a href="https://www.twitter.com" target="_blank" class="footer__social-link">
-                     <i class="ri-twitter-line"></i>
-                  </a>
+                <div class="contact__form-div">
+                  <label class="contact__form-tag form__email">E-mail</label>
+                  <input
+                    type="text"
+                    name="user_email"
+                    required
+                    placeholder="Write your email"
+                    class="contact__form-input"
+                    id="contact-email"
+                  />
+                </div>
 
-                  <a href="https://www.youtube.com" target="_blank" class="footer__social-link">
-                     <i class="ri-youtube-line"></i>
-                  </a>
-               </div>
+                <div class="contact__form-div contact__form-area">
+                  <label class="contact__form-tag form__question"
+                    >Questions</label
+                  >
+                  <textarea
+                    name="user_question"
+                    placeholder="Send us a message"
+                    id="contact-question"
+                    class="contact__form-input"
+                  ></textarea>
+                </div>
 
-               <div class="underconstruction">*Socials currently in-progress*</div>
+                <p class="contact__message" id="contact-message"></p>
 
-               <span class="footer__copy">
-                  &#169; Copyright YICC. All rights reserved
-               </span>
+                <button type="submit" class="contact__button submit__button">
+                  Submit <i class="ri-arrow-right-up-line"></i>
+                </button>
+              </form>
             </div>
-         </div>
-      </footer>
+          </div>
+          <img
+            src="img/right-contact.png"
+            alt="Right Contact Image"
+            class="test2"
+          />
+        </div>
+      </section>
+    </main>
 
-      <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-line"></i>
-      </a>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div>
+            <a href="#" class="footer__logo">Yuima-ru</a>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="components/scrollreveal.min.js"></script>
+            <p class="footer__description">The Spirit of Cooperation</p>
+          </div>
 
-      <!--=============== EMAIL JS ===============-->
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+          <div class="footer__data grid">
+            <div>
+              <h3 class="footer__title footer__about">About</h3>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="components/main.js"></script>
+              <ul class="footer__links">
+                <li>
+                  <a href="#about" class="footer__link about__us">About Us</a>
+                </li>
 
-      <!--=============== LANGUAGE CHANGE JS ===============-->
-      <script src="components/langDB.js"></script>
+                <li>
+                  <a href="#staff" class="footer__link about__staff"
+                    >Meet Our Staffs</a
+                  >
+                </li>
 
-   </body>
+                <li>
+                  <a
+                    href="#announcement"
+                    class="footer__link about__announcement"
+                    >Announcements</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title footer__information">Information</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#schedule" class="footer__link information__schedule"
+                    >Schedules</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#location" class="footer__link information__location"
+                    >Location</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title footer__contact">Contact</h3>
+
+              <ul class="footer__links">
+                <li>
+                  <a href="#contact" class="footer__link contact__phone"
+                    >Phone Number</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#contact" class="footer__link contact__email"
+                    >E-mail</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#contact" class="footer__link contact__address"
+                    >Address</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__group">
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-facebook-line"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-twitter-line"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="ri-youtube-line"></i>
+            </a>
+          </div>
+
+          <div class="underconstruction">*Socials currently in-progress*</div>
+
+          <span class="footer__copy">
+            &#169; Copyright YICC. All rights reserved
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="components/scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="components/main.js"></script>
+
+    <!--=============== LANGUAGE CHANGE JS ===============-->
+    <script src="components/langDB.js"></script>
+  </body>
 </html>
