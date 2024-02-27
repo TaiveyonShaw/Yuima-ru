@@ -1,9 +1,38 @@
-# Yuima-ru Christian Church
-A Website for Yuima-ru Christian Church in Ishikawa, Okinawa
+# Yuima-ru Christian Church / ゆいまーるキリスト教会
 
-## Bugs / Issues:
+## Table of contents
+* [Introduction](#Intro)
+* [Installation](#Installation)
+* [Start](#Start)
 
-## Current Ideas:
-- Add Offerings page/route later but this might be after conversion.
-- Add local storing for language which is done in dark/light mode.
-- Add Cookie option. I think this might be important.
+## Intro
+A simple responsive SPA Website for Yuima-ru Christian Church in Ishikawa, Okinawa
+
+## Installation
+To run this Project locally, I used:
+* Node.js
+* npm
+* http-server
+
+#### As a dependency in your npm package:
+```
+$ npm install http-server
+```
+
+#### If you wish to install globally:
+```
+$ npm install --global http-server
+```
+	
+## Start
+To run this project using http-server:
+
+#### Navigate to root of the repository, then run:
+```
+$ http-server
+```
+
+#### If you wish to run the server without installing:
+```
+$ npx http-server [path] [options]
+```
