@@ -168,6 +168,17 @@ img {
   text-decoration: underline;
 }
 
+.login__back {
+  position: absolute;
+  z-index: 0;
+  justify-self: center;
+  top: 47rem;
+  width: fit-content;
+  backdrop-filter: blur(16px);
+  color: white;
+  background-color: hsla(0, 0%, 60%, 0.2);
+  border: 2px solid hsla(0, 0%, 100%, 0.7);
+}
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
 @media screen and (min-width: 576px) {
@@ -180,5 +191,10 @@ img {
   }
   .login__title {
     margin-bottom: 2rem;
+  }
+
+  .login__back {
+    top: 1rem;
+    left: 1rem;
   }
 }
