@@ -144,7 +144,7 @@ const schedule__titleEl = document.querySelector(".schedule__title");
 const schedule__subtitleEl = document.querySelector(".schedule__subtitle");
 
 // Event 1
-const biblestudy__titleEl = document.querySelector(".biblestudy__title");
+// const biblestudy__titleEl = document.querySelector(".biblestudy__title");
 const biblestudy__locationEl = document.querySelector(".biblestudy__location");
 const biblestudy__timeEl = document.querySelector(".biblestudy__time");
 const biblestudy__addressEl = document.querySelector(".biblestudy__address");
@@ -152,9 +152,9 @@ const biblestudy__addressEl = document.querySelector(".biblestudy__address");
 const biblestudy__descriptionEl = document.querySelector(
   ".biblestudy__description"
 );
-const biblestudy__modaltitleEl = document.querySelector(
-  ".biblestudy__title-modal"
-);
+// const biblestudy__modaltitleEl = document.querySelector(
+//   ".biblestudy__title-modal"
+// );
 const biblestudy__modalEl = document.querySelector(".biblestudy__modal");
 
 // Event 2
@@ -300,14 +300,14 @@ link.forEach((el) => {
     schedule__subtitleEl.innerHTML = data[attr].schedule__subtitle;
 
     // Event 1
-    biblestudy__titleEl.innerHTML = data[attr].biblestudy__title;
-    biblestudy__locationEl.innerHTML = data[attr].biblestudy__location;
-    biblestudy__timeEl.innerHTML = data[attr].biblestudy__time;
-    biblestudy__addressEl.innerHTML = data[attr].biblestudy__address;
+    // biblestudy__titleEl.innerHTML = data[attr].biblestudy__title;
+    // biblestudy__locationEl.innerHTML = data[attr].biblestudy__location;
+    // biblestudy__timeEl.innerHTML = data[attr].biblestudy__time;
+    // biblestudy__addressEl.innerHTML = data[attr].biblestudy__address;
     // biblestudy__dateEl.innerHTML = data[attr].biblestudy__date;
-    biblestudy__descriptionEl.innerHTML = data[attr].biblestudy__description;
-    biblestudy__modaltitleEl.innerHTML = data[attr].biblestudy__modaltitle;
-    biblestudy__modalEl.innerHTML = data[attr].biblestudy__modal;
+    // biblestudy__descriptionEl.innerHTML = data[attr].biblestudy__description;
+    // biblestudy__modaltitleEl.innerHTML = data[attr].biblestudy__modaltitle;
+    // biblestudy__modalEl.innerHTML = data[attr].biblestudy__modal;
 
     // Event 2
     worship__titleEl.innerHTML = data[attr].worship__title;
@@ -320,14 +320,14 @@ link.forEach((el) => {
     worship__modalEl.innerHTML = data[attr].worship__modal;
 
     // Event 3
-    jrchurch__titleEl.innerHTML = data[attr].jrchurch__title;
-    jrchurch__locationEl.innerHTML = data[attr].jrchurch__location;
-    jrchurch__timeEl.innerHTML = data[attr].jrchurch__time;
-    jrchurch__addressEl.innerHTML = data[attr].jrchurch__address;
-    jrchurch__dateEl.innerHTML = data[attr].jrchurch__date;
-    jrchurch__descriptionEl.innerHTML = data[attr].jrchurch__description;
-    jrchurch__modaltitleEl.innerHTML = data[attr].jrchurch__modaltitle;
-    jrchurch__modalEl.innerHTML = data[attr].jrchurch__modal;
+    // jrchurch__titleEl.innerHTML = data[attr].jrchurch__title;
+    // jrchurch__locationEl.innerHTML = data[attr].jrchurch__location;
+    // jrchurch__timeEl.innerHTML = data[attr].jrchurch__time;
+    // jrchurch__addressEl.innerHTML = data[attr].jrchurch__address;
+    // jrchurch__dateEl.innerHTML = data[attr].jrchurch__date;
+    // jrchurch__descriptionEl.innerHTML = data[attr].jrchurch__description;
+    // jrchurch__modaltitleEl.innerHTML = data[attr].jrchurch__modaltitle;
+    // jrchurch__modalEl.innerHTML = data[attr].jrchurch__modal;
 
     // Location Section
     location__titleEl.innerHTML = data[attr].location__title;
@@ -367,8 +367,6 @@ link.forEach((el) => {
     contact__emailEl.innerHTML = data[attr].contact__email;
     contact__addressEl.innerHTML = data[attr].contact__address;
     underconstructionEl.innerHTML = data[attr].underconstruction;
-    adminEl.innerHTML = data[attr].admin;
-    admin__loginEl.innerHTML = data[attr].admin__login;
   });
 });
 
@@ -421,7 +419,7 @@ let data = {
     staff2__description: "Assistant",
     schedule__title: "Schedule",
     schedule__subtitle: "Weekly Schedule",
-    biblestudy__title: "Bible Study Session",
+    // biblestudy__title: "Bible Study Session",
     biblestudy__location:
       '<i class="fas fa-map-marker-alt qualification__modal-icon"></i>' +
       "Ishikawa, Uruma, Okinawa",
@@ -590,7 +588,7 @@ let data = {
     staff2__description: "アシスタント",
     schedule__title: "スケジュール",
     schedule__subtitle: "週間スケジュール",
-    biblestudy__title: "聖書勉強会",
+    // biblestudy__title: "聖書勉強会",
     biblestudy__location:
       '<i class="fas fa-map-marker-alt qualification__modal-icon"></i>' +
       "石川県うるま市沖縄",
