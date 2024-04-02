@@ -24,28 +24,28 @@ const nextTuesday = new Date(
 
 // Loading updated dates for first time load
 window.addEventListener("load", () => {
-  document.querySelector(".biblestudy__date").innerHTML =
-    '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
-    "Tue, " +
-    months[nextTuesday.getMonth()] +
-    " " +
-    nextTuesday.getDate().toString() +
-    ", 9:30 AM";
-  document.querySelector(".biblestudy__date-modal").innerHTML =
-    '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
-    "Date/Time: " +
-    "Tue, " +
-    months[nextTuesday.getMonth()] +
-    " " +
-    nextTuesday.getDate().toString() +
-    ", 9:30 AM";
+  // document.querySelector(".biblestudy__date").innerHTML =
+  //   '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
+  //   "Tue, " +
+  //   months[nextTuesday.getMonth()] +
+  //   " " +
+  //   nextTuesday.getDate().toString() +
+  //   ", 9:30 AM";
+  // document.querySelector(".biblestudy__date-modal").innerHTML =
+  //   '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
+  //   "Date/Time: " +
+  //   "Tue, " +
+  //   months[nextTuesday.getMonth()] +
+  //   " " +
+  //   nextTuesday.getDate().toString() +
+  //   ", 9:30 AM";
   document.querySelector(".worship__date").innerHTML =
     '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
     "Sun, " +
     months[nextSunday.getMonth()] +
     " " +
     nextSunday.getDate().toString() +
-    ", 10:00 AM";
+    ", 09:00 AM";
   document.querySelector(".worship__date-modal").innerHTML =
     '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
     "Date/Time: " +
@@ -53,22 +53,22 @@ window.addEventListener("load", () => {
     months[nextSunday.getMonth()] +
     " " +
     nextSunday.getDate().toString() +
-    ", 10:00 AM";
-  document.querySelector(".jrchurch__date").innerHTML =
-    '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
-    "Sun, " +
-    months[nextSunday.getMonth()] +
-    " " +
-    nextSunday.getDate().toString() +
-    ", 9:30 AM";
-  document.querySelector(".jrchurch__date-modal").innerHTML =
-    '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
-    "Date/Time: " +
-    "Sun, " +
-    months[nextSunday.getMonth()] +
-    " " +
-    nextSunday.getDate().toString() +
-    ", 9:30 AM";
+    ", 09:00 AM";
+  // document.querySelector(".jrchurch__date").innerHTML =
+  //   '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
+  //   "Sun, " +
+  //   months[nextSunday.getMonth()] +
+  //   " " +
+  //   nextSunday.getDate().toString() +
+  //   ", 9:30 AM";
+  // document.querySelector(".jrchurch__date-modal").innerHTML =
+  //   '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
+  //   "Date/Time: " +
+  //   "Sun, " +
+  //   months[nextSunday.getMonth()] +
+  //   " " +
+  //   nextSunday.getDate().toString() +
+  //   ", 9:30 AM";
 });
 
 //  Language Selection variables
@@ -148,7 +148,7 @@ const biblestudy__titleEl = document.querySelector(".biblestudy__title");
 const biblestudy__locationEl = document.querySelector(".biblestudy__location");
 const biblestudy__timeEl = document.querySelector(".biblestudy__time");
 const biblestudy__addressEl = document.querySelector(".biblestudy__address");
-const biblestudy__dateEl = document.querySelector(".biblestudy__date");
+// const biblestudy__dateEl = document.querySelector(".biblestudy__date");
 const biblestudy__descriptionEl = document.querySelector(
   ".biblestudy__description"
 );
@@ -304,7 +304,7 @@ link.forEach((el) => {
     biblestudy__locationEl.innerHTML = data[attr].biblestudy__location;
     biblestudy__timeEl.innerHTML = data[attr].biblestudy__time;
     biblestudy__addressEl.innerHTML = data[attr].biblestudy__address;
-    biblestudy__dateEl.innerHTML = data[attr].biblestudy__date;
+    // biblestudy__dateEl.innerHTML = data[attr].biblestudy__date;
     biblestudy__descriptionEl.innerHTML = data[attr].biblestudy__description;
     biblestudy__modaltitleEl.innerHTML = data[attr].biblestudy__modaltitle;
     biblestudy__modalEl.innerHTML = data[attr].biblestudy__modal;
@@ -425,13 +425,13 @@ let data = {
     biblestudy__location:
       '<i class="fas fa-map-marker-alt qualification__modal-icon"></i>' +
       "Ishikawa, Uruma, Okinawa",
-    biblestudy__date:
-      '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
-      "Tue, " +
-      months[nextTuesday.getMonth()] +
-      " " +
-      nextTuesday.getDate().toString() +
-      ", 9:30AM JST",
+    // biblestudy__date:
+    //   '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
+    //   "Tue, " +
+    //   months[nextTuesday.getMonth()] +
+    //   " " +
+    //   nextTuesday.getDate().toString() +
+    //   ", 9:30AM JST",
     biblestudy__modal: "Read More" + '<i class="ri-arrow-right-line"></i>',
     biblestudy__modaltitle: "Bible Study Session",
     biblestudy__description:
@@ -578,7 +578,7 @@ let data = {
     lunch__description: "礼拝後は昼食を準備します。皆さんご参加ください",
     templocation__title: "残暑が厳しいため",
     templocation__description:
-      "残暑が厳しいため、当面、礼拝は10時より牧師宅で行います。 <br> うるま市石川 ２１０７－８ (牧師の家で)",
+      "残暑が厳しいため、当面、礼拝９時より牧師宅で行います。 <br> うるま市石川 ２１０７－８ (牧師の家で)",
     prayer__title: "祈りの課題",
     prayer__description:
       "- うるま市石川地区の救いのために <br> - 家族、友人の救いの為に <br> - イスラエルの平和の為に <br> - ロシアとウクライナの平和の為に",
@@ -610,13 +610,13 @@ let data = {
       '<a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="address__button" target="_blank">' +
       "石川県うるま市1丁目28-6〒904-1106" +
       "</a>",
-    biblestudy__date:
-      '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
-      "火曜日, " +
-      (nextTuesday.getMonth() + 1) +
-      "月" +
-      nextTuesday.getDate().toString() +
-      "日, 9:30午前",
+    // biblestudy__date:
+    //   '<i class="far fa-calendar-alt qualification__modal-icon"></i>' +
+    //   "火曜日, " +
+    //   (nextTuesday.getMonth() + 1) +
+    //   "月" +
+    //   nextTuesday.getDate().toString() +
+    //   "日, 9:30午前",
     worship__title: "主日礼拝",
     worship__location:
       '<i class="fas fa-map-marker-alt qualification__modal-icon"></i>' +
@@ -627,7 +627,7 @@ let data = {
       (nextSunday.getMonth() + 1) +
       "月" +
       nextSunday.getDate().toString() +
-      "日, 10:00午前",
+      "日, 09:00午前",
     worship__modal: "詳しく知る" + '<i class="ri-arrow-right-line"></i>',
     worship__modaltitle: "主日礼拝",
     worship__description: "一緒に神様について学ぶ礼拝にぜひご参加ください！",
@@ -642,7 +642,7 @@ let data = {
       (nextSunday.getMonth() + 1) +
       "月" +
       nextSunday.getDate().toString() +
-      "日, 10:00午前",
+      "日, 09:00午前",
     jrchurch__title: "ジュニアチャーチ（英語）",
     jrchurch__location:
       '<i class="fas fa-map-marker-alt qualification__modal-icon"></i>' +
