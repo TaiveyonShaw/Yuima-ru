@@ -279,11 +279,6 @@ link.forEach((el) => {
     announcement__subtitleEl.innerHTML = data[attr].announcement__subtitle;
     sunday__titleEl.innerHTML = data[attr].sunday__title;
     sunday__descriptionEl.innerHTML = data[attr].sunday__description;
-    lunch__titleEl.innerHTML = data[attr].lunch__title;
-    lunch__descriptionEl.innerHTML = data[attr].lunch__description;
-    templocation__titleEl.innerHTML = data[attr].templocation__title;
-    templocation__descriptionEl.innerHTML =
-      data[attr].templocation__description;
     prayer__titleEl.innerHTML = data[attr].prayer__title;
     prayer__descriptionEl.innerHTML = data[attr].prayer__description;
 
