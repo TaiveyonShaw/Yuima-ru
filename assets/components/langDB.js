@@ -403,7 +403,7 @@ let data = {
     announcement__title: "Announcements",
     announcement__subtitle: "Weekly Announcement",
     sunday__title: "Sunday Service",
-    sunday__description: "We will have service every Sunday at 10:00pm",
+    sunday__description: "We will have service every Sunday at 09:00am",
     lunch__title: "Join us for Lunch",
     lunch__description:
       "After the service, we will prepare lunch. Please join us!",
@@ -459,7 +459,7 @@ let data = {
       months[nextSunday.getMonth()] +
       " " +
       nextSunday.getDate().toString() +
-      ", 10:00AM JST",
+      ", 09:00AM JST",
     worship__modal: "Read More" + '<i class="ri-arrow-right-line"></i>',
     worship__description:
       "Come join us for a Worship Service and Jr. Church to learn about god together!",
@@ -477,7 +477,7 @@ let data = {
       months[nextSunday.getMonth()] +
       " " +
       nextSunday.getDate().toString() +
-      ", 10:00AM JST",
+      ", 09:00AM JST",
     jrchurch__title: "Jr. Church (English)",
     jrchurch__location:
       '<i class="fas fa-map-marker-alt qualification__modal-icon"></i>' +
@@ -573,7 +573,7 @@ let data = {
     announcement__title: "お知らせ",
     announcement__subtitle: "",
     sunday__title: "主日礼拝",
-    sunday__description: "毎週日曜日10時より礼拝を行います.",
+    sunday__description: "毎週日曜日09時より礼拝を行います.",
     lunch__title: "昼食",
     lunch__description: "礼拝後は昼食を準備します。皆さんご参加ください",
     templocation__title: "残暑が厳しいため",
