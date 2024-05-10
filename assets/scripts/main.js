@@ -17,11 +17,11 @@ if (navClose) {
   });
 }
 /*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll(".nav__link");
+const navLink = document.querySelectorAll(".navLink");
 
 const linkAction = () => {
   const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav__link, we remove the show-menu class
+  // When we click on each navLink, we remove the show-menu class
   navMenu.classList.remove("show-menu");
 };
 navLink.forEach((n) => n.addEventListener("click", linkAction));
@@ -57,7 +57,7 @@ const scrollActive = () => {
       sectionTop = current.offsetTop - 58,
       sectionId = current.getAttribute("id"),
       sectionsClass = document.querySelector(
-        ".nav__menu a[href*=" + sectionId + "]"
+        ".navMenu a[href*=" + sectionId + "]"
       );
 
     if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
@@ -78,12 +78,10 @@ const sr = ScrollReveal({
   reset: false, // Animation repeat
 });
 
-sr.reveal(
-  ".home__data"
-); /*, .explore__data, .explore__user, .footer__container')
+sr.reveal(".homeData"); /*, .explore__data, .explore__user, .footerContainer')
 sr.reveal('.home__card', {delay: 600, distance: '100px', interval: 100})
-// sr.reveal('.about__data, .schedule__image', {origin: 'right'})
-// sr.reveal('.about__image, .schedule__data', {origin: 'left'})
+// sr.reveal('.aboutData, .schedule__image', {origin: 'right'})
+// sr.reveal('.about__image, .scheduleData', {origin: 'left'})
 // sr.reveal('.popular__card', {interval: 200})
 
 /*=============== E-MAIL JS ===============*/
@@ -181,9 +179,9 @@ themeButton.addEventListener("click", () => {
 });
 
 /*==================== QUALIFICATION TABS ====================*/
-const modalViews = document.querySelectorAll(".qualification__modal"),
-  modalBtns = document.querySelectorAll(".card__button"),
-  modalCloses = document.querySelectorAll(".qualification__modal-close");
+const modalViews = document.querySelectorAll(".qualificationModal"),
+  modalBtns = document.querySelectorAll(".cardButton"),
+  modalCloses = document.querySelectorAll(".qualificationModal-close");
 
 let modal = function (modalClick) {
   modalViews[modalClick].classList.add("active-modal");
