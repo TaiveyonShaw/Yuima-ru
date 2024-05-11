@@ -411,8 +411,9 @@ body.dark-theme {
 .aboutAnnouncementButton {
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
 }
-.about__image:hover .about__img {
-  transform: scale(1.2);
+
+.aboutImg {
+  display: none;
 }
 
 /*=============== location ===============*/
@@ -439,6 +440,10 @@ body.dark-theme {
   text-align: center;
   margin: auto;
   max-width: 800px;
+}
+
+.locationImg {
+  display: none;
 }
 
 /*=============== Announcement ===============*/
@@ -486,6 +491,9 @@ body.dark-theme {
   color: var(--text-color);
 }
 
+.announcementImg {
+  display: none;
+}
 /*=============== Staff ===============*/
 .staff {
   position: relative;
@@ -837,6 +845,10 @@ body.dark-theme {
   left: 1.5rem;
 }
 
+.contactImg {
+  display: none;
+}
+
 /* Status color */
 .color-red {
   color: hsl(4, 71%, 50%);
@@ -1041,6 +1053,18 @@ body.dark-theme {
     text-align: initial;
   }
 
+  .aboutImg {
+    display: grid;
+  }
+
+  .announcementImg {
+    display: grid;
+  }
+
+  .locationImg {
+    display: grid;
+  }
+
   .locationContainer {
     grid-template-columns: repeat(3, 240px);
   }
@@ -1184,6 +1208,17 @@ body.dark-theme {
   .cardData {
     width: 316px;
     padding-inline: 2.5rem;
+  }
+
+  .contactImg {
+    display: grid;
+  }
+
+  .contactBox {
+    grid-template-columns: repeat(3, 430px);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
   }
 
   .scheduleContainer {
