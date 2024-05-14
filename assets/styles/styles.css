@@ -308,7 +308,6 @@ body.dark-theme {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 800px;
   height: 100vh;
   width: 100%;
   object-fit: cover;
@@ -336,6 +335,7 @@ body.dark-theme {
 
 .homeData {
   text-align: center;
+  backdrop-filter: blur(2px);
 }
 
 .homeSubtitle {
@@ -361,6 +361,17 @@ body.dark-theme {
 
 .homeData a {
   color: var(--title-color-white);
+}
+
+.homeBg-blur {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 10%,
+    hsl(0, 0%, 0%) 200%
+  );
 }
 
 /*=============== BUTTON ===============*/
