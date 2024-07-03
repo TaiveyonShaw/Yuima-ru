@@ -45,7 +45,7 @@ window.addEventListener("load", () => {
     months[nextSunday.getMonth()] +
     " " +
     nextSunday.getDate().toString() +
-    ", 09:00 AM";
+    ", 10:00 AM";
   document.querySelector(".worshipDate-modal").innerHTML =
     '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
     "Date/Time: " +
@@ -53,7 +53,7 @@ window.addEventListener("load", () => {
     months[nextSunday.getMonth()] +
     " " +
     nextSunday.getDate().toString() +
-    ", 09:00 AM";
+    ", 10:00 AM";
   // document.querySelector(".jrchurch__date").innerHTML =
   //   '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
   //   "Sun, " +
@@ -377,7 +377,7 @@ let data = {
     announcementTitle: "Announcements",
     announcementSubtitle: "Weekly Announcement",
     sundayTitle: "Sunday Service",
-    sundayDescription: "We will have service every Sunday at 09:00am",
+    sundayDescription: "We will have service every Sunday at 10:00am",
     lunch__title: "Join us for Lunch",
     lunch__description:
       "After the service, we will prepare lunch. Please join us!",
@@ -433,7 +433,7 @@ let data = {
       months[nextSunday.getMonth()] +
       " " +
       nextSunday.getDate().toString() +
-      ", 09:00AM JST",
+      ", 10:00AM JST",
     worshipModal: "Read More" + '<i class="ri-arrow-right-line"></i>',
     worshipDescription:
       "Come join us for a Worship Service and Jr. Church to learn about god together!",
@@ -451,7 +451,7 @@ let data = {
       months[nextSunday.getMonth()] +
       " " +
       nextSunday.getDate().toString() +
-      ", 09:00AM JST",
+      ", 10:00AM JST",
     jrchurch__title: "Jr. Church (English)",
     jrchurch__location:
       '<i class="fas fa-map-marker-alt qualificationModal-icon"></i>' +
@@ -598,7 +598,7 @@ let data = {
       (nextSunday.getMonth() + 1) +
       "月" +
       nextSunday.getDate().toString() +
-      "日, 09:00午前",
+      "日, 10:00午前",
     worshipModal: "詳しく知る" + '<i class="ri-arrow-right-line"></i>',
     worshipModaltitle: "主日礼拝",
     worshipDescription: "一緒に神様について学ぶ礼拝にぜひご参加ください！",
@@ -613,7 +613,7 @@ let data = {
       (nextSunday.getMonth() + 1) +
       "月" +
       nextSunday.getDate().toString() +
-      "日, 09:00午前",
+      "日, 10:00午前",
     jrchurch__title: "ジュニアチャーチ（英語）",
     jrchurch__location:
       '<i class="fas fa-map-marker-alt qualificationModal-icon"></i>' +
