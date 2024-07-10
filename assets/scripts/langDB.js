@@ -24,21 +24,6 @@ const nextTuesday = new Date(
 
 // Loading updated dates for first time load
 window.addEventListener("load", () => {
-  // document.querySelector(".biblestudy__date").innerHTML =
-  //   '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-  //   "Tue, " +
-  //   months[nextTuesday.getMonth()] +
-  //   " " +
-  //   nextTuesday.getDate().toString() +
-  //   ", 9:30 AM";
-  // document.querySelector(".biblestudy__date-modal").innerHTML =
-  //   '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-  //   "Date/Time: " +
-  //   "Tue, " +
-  //   months[nextTuesday.getMonth()] +
-  //   " " +
-  //   nextTuesday.getDate().toString() +
-  //   ", 9:30 AM";
   document.querySelector(".worshipDate").innerHTML =
     '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
     "Sun, " +
@@ -54,21 +39,6 @@ window.addEventListener("load", () => {
     " " +
     nextSunday.getDate().toString() +
     ", 10:00 AM";
-  // document.querySelector(".jrchurch__date").innerHTML =
-  //   '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-  //   "Sun, " +
-  //   months[nextSunday.getMonth()] +
-  //   " " +
-  //   nextSunday.getDate().toString() +
-  //   ", 9:30 AM";
-  // document.querySelector(".jrchurch__date-modal").innerHTML =
-  //   '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-  //   "Date/Time: " +
-  //   "Sun, " +
-  //   months[nextSunday.getMonth()] +
-  //   " " +
-  //   nextSunday.getDate().toString() +
-  //   ", 9:30 AM";
 });
 
 //  Language Selection variables
@@ -138,20 +108,6 @@ const scheduleTitleEl = document.querySelector(".scheduleTitle");
 const scheduleSubtitleEl = document.querySelector(".scheduleSubtitle");
 
 // Event 1
-// const biblestudy__titleEl = document.querySelector(".biblestudy__title");
-const biblestudy__locationEl = document.querySelector(".biblestudy__location");
-const biblestudy__timeEl = document.querySelector(".biblestudy__time");
-const biblestudy__addressEl = document.querySelector(".biblestudy__address");
-// const biblestudy__dateEl = document.querySelector(".biblestudy__date");
-const biblestudy__descriptionEl = document.querySelector(
-  ".biblestudy__description"
-);
-// const biblestudy__modaltitleEl = document.querySelector(
-//   ".biblestudy__title-modal"
-// );
-const biblestudy__modalEl = document.querySelector(".biblestudy__modal");
-
-// Event 2
 const worshipTitleEl = document.querySelector(".worshipTitle");
 const worshipLocationEl = document.querySelector(".worshipLocation");
 const worshipTimeEl = document.querySelector(".worshipTime");
@@ -160,18 +116,6 @@ const worshipDateEl = document.querySelector(".worshipDate");
 const worshipDescriptionEl = document.querySelector(".worshipDescription");
 const worshipModaltitleEl = document.querySelector(".worshipModaltitle");
 const worshipModalEl = document.querySelector(".worshipModal");
-
-// Event 3
-const jrchurch__titleEl = document.querySelector(".jrchurch__title");
-const jrchurch__locationEl = document.querySelector(".jrchurch__location");
-const jrchurch__timeEl = document.querySelector(".jrchurch__time");
-const jrchurch__addressEl = document.querySelector(".jrchurch__address");
-const jrchurch__dateEl = document.querySelector(".jrchurch__date");
-const jrchurch__descriptionEl = document.querySelector(
-  ".jrchurch__description"
-);
-const jrchurch__modaltitleEl = document.querySelector(".jrchurch__modaltitle");
-const jrchurch__modalEl = document.querySelector(".jrchurch__modal");
 
 // Location Section
 const locationTitleEl = document.querySelector(".locationTitle");
@@ -277,16 +221,6 @@ link.forEach((el) => {
     scheduleSubtitleEl.innerHTML = data[attr].scheduleSubtitle;
 
     // Event 1
-    // biblestudy__titleEl.innerHTML = data[attr].biblestudy__title;
-    // biblestudy__locationEl.innerHTML = data[attr].biblestudy__location;
-    // biblestudy__timeEl.innerHTML = data[attr].biblestudy__time;
-    // biblestudy__addressEl.innerHTML = data[attr].biblestudy__address;
-    // biblestudy__dateEl.innerHTML = data[attr].biblestudy__date;
-    // biblestudy__descriptionEl.innerHTML = data[attr].biblestudy__description;
-    // biblestudy__modaltitleEl.innerHTML = data[attr].biblestudy__modaltitle;
-    // biblestudy__modalEl.innerHTML = data[attr].biblestudy__modal;
-
-    // Event 2
     worshipTitleEl.innerHTML = data[attr].worshipTitle;
     worshipLocationEl.innerHTML = data[attr].worshipLocation;
     worshipTimeEl.innerHTML = data[attr].worshipTime;
@@ -295,16 +229,6 @@ link.forEach((el) => {
     worshipDescriptionEl.innerHTML = data[attr].worshipDescription;
     worshipModaltitleEl.innerHTML = data[attr].worshipModaltitle;
     worshipModalEl.innerHTML = data[attr].worshipModal;
-
-    // Event 3
-    // jrchurch__titleEl.innerHTML = data[attr].jrchurch__title;
-    // jrchurch__locationEl.innerHTML = data[attr].jrchurch__location;
-    // jrchurch__timeEl.innerHTML = data[attr].jrchurch__time;
-    // jrchurch__addressEl.innerHTML = data[attr].jrchurch__address;
-    // jrchurch__dateEl.innerHTML = data[attr].jrchurch__date;
-    // jrchurch__descriptionEl.innerHTML = data[attr].jrchurch__description;
-    // jrchurch__modaltitleEl.innerHTML = data[attr].jrchurch__modaltitle;
-    // jrchurch__modalEl.innerHTML = data[attr].jrchurch__modal;
 
     // Location Section
     locationTitleEl.innerHTML = data[attr].locationTitle;
@@ -395,34 +319,6 @@ let data = {
     staff2Description: "Assistant",
     scheduleTitle: "Schedule",
     scheduleSubtitle: "Weekly Schedule",
-    // biblestudy__title: "Bible Study Session",
-    biblestudy__location:
-      '<i class="fas fa-map-marker-alt qualificationModal-icon"></i>' +
-      "Ishikawa, Uruma, Okinawa",
-    // biblestudy__date:
-    //   '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-    //   "Tue, " +
-    //   months[nextTuesday.getMonth()] +
-    //   " " +
-    //   nextTuesday.getDate().toString() +
-    //   ", 9:30AM JST",
-    biblestudy__modal: "Read More" + '<i class="ri-arrow-right-line"></i>',
-    biblestudy__modaltitle: "Bible Study Session",
-    biblestudy__description:
-      "Come join us for a Bible study session to better understand god's message!",
-    biblestudy__address:
-      '<i class="ri-map-pin-line qualificationModal-icon"></i>' +
-      '<a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="addressButton" target="_blank">' +
-      "Address: 1-chōme-28-6 Ishikawa" +
-      "<br>" +
-      "Uruma, Okinawa 〒904-1106 </a>",
-    biblestudy__time:
-      '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-      "Tue, " +
-      months[nextTuesday.getMonth()] +
-      " " +
-      nextTuesday.getDate().toString() +
-      ", 9:30AM JST",
     worshipTitle: "Worship Services",
     worshipLocation:
       '<i class="fas fa-map-marker-alt qualificationModal-icon"></i>' +
@@ -452,34 +348,6 @@ let data = {
       " " +
       nextSunday.getDate().toString() +
       ", 10:00AM JST",
-    jrchurch__title: "Jr. Church (English)",
-    jrchurch__location:
-      '<i class="fas fa-map-marker-alt qualificationModal-icon"></i>' +
-      "Ishikawa, Uruma, Okinawa",
-    jrchurch__date:
-      '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-      "Sun, " +
-      months[nextSunday.getMonth()] +
-      " " +
-      nextSunday.getDate().toString() +
-      ", 9:30AM JST",
-    jrchurch__modal: "Read More" + '<i class="ri-arrow-right-line"></i>',
-    jrchurch__modaltitle: "Jr. Church (English Only)",
-    jrchurch__description:
-      "Come join us for Jr. Church for kids to learn about god!",
-    jrchurch__address:
-      '<i class="ri-map-pin-line qualificationModal-icon"></i>' +
-      '<a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="addressButton" target="_blank">' +
-      "Address: 1-chōme-28-6 Ishikawa" +
-      "<br>" +
-      "Uruma, Okinawa 〒904-1106 </a>",
-    jrchurch__time:
-      '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-      "Sun, " +
-      months[nextSunday.getMonth()] +
-      " " +
-      nextSunday.getDate().toString() +
-      ", 9:30AM JST",
     locationTitle: "Location",
     locationDescription: "Where are we located?",
     locationAddress: "Address: 1-chōme-28-6 Ishikawa Uruma, Okinawa 〒904-1106",
@@ -544,7 +412,7 @@ let data = {
     announcementTitle: "お知らせ",
     announcementSubtitle: "",
     sundayTitle: "主日礼拝",
-    sundayDescription: "毎週日曜日09時より礼拝を行います.",
+    sundayDescription: "毎週日曜日10時より礼拝を行います.",
     lunch__title: "昼食",
     lunch__description: "礼拝後は昼食を準備します。皆さんご参加ください",
     templocationTitle: "残暑が厳しいため",
@@ -561,33 +429,6 @@ let data = {
     staff2Description: "アシスタント",
     scheduleTitle: "スケジュール",
     scheduleSubtitle: "週間スケジュール",
-    // biblestudy__title: "聖書勉強会",
-    biblestudy__location:
-      '<i class="fas fa-map-marker-alt qualificationModal-icon"></i>' +
-      "石川県うるま市沖縄",
-    biblestudy__time:
-      '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-      "火曜日, " +
-      (nextTuesday.getMonth() + 1) +
-      "月" +
-      nextTuesday.getDate().toString() +
-      "日, 9:30午前",
-    biblestudy__modal: "詳しく知る" + '<i class="ri-arrow-right-line"></i>',
-    biblestudy__modaltitle: "聖書勉強会",
-    biblestudy__description:
-      "神のメッセージをより深く理解するために、聖書の勉強会にぜひご参加ください。",
-    biblestudy__address:
-      '<i class="ri-map-pin-line qualificationModal-icon"></i>' +
-      '<a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="addressButton" target="_blank">' +
-      "石川県うるま市1丁目28-6〒904-1106" +
-      "</a>",
-    // biblestudy__date:
-    //   '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-    //   "火曜日, " +
-    //   (nextTuesday.getMonth() + 1) +
-    //   "月" +
-    //   nextTuesday.getDate().toString() +
-    //   "日, 9:30午前",
     worshipTitle: "主日礼拝",
     worshipLocation:
       '<i class="fas fa-map-marker-alt qualificationModal-icon"></i>' +
@@ -614,33 +455,6 @@ let data = {
       "月" +
       nextSunday.getDate().toString() +
       "日, 10:00午前",
-    jrchurch__title: "ジュニアチャーチ（英語）",
-    jrchurch__location:
-      '<i class="fas fa-map-marker-alt qualificationModal-icon"></i>' +
-      "石川県うるま市沖縄",
-    jrchurch__time:
-      '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-      "日曜日, " +
-      (nextSunday.getMonth() + 1) +
-      "月" +
-      nextSunday.getDate().toString() +
-      "日, 9:30午前",
-    jrchurch__modal: "詳しく知る" + '<i class="ri-arrow-right-line"></i>',
-    jrchurch__modaltitle: "ジュニアチャーチ（英語)",
-    jrchurch__description:
-      "子供たちが神について学ぶためのジュニアチャーチにぜひ参加してください！",
-    jrchurch__address:
-      '<i class="ri-map-pin-line qualificationModal-icon"></i>' +
-      '<a href="https://www.google.com/maps?ll=26.430002,127.828314&z=19&t=h&hl=en&gl=JP&mapclient=embed&q=1-ch%C5%8Dme-28-7+Ishikawa+Uruma,+Okinawa+904-1106" class="addressButton" target="_blank">' +
-      "石川県うるま市1丁目28-6〒904-1106" +
-      "</a>",
-    jrchurch__date:
-      '<i class="far fa-calendar-alt qualificationModal-icon"></i>' +
-      "日曜日, " +
-      (nextSunday.getMonth() + 1) +
-      "月" +
-      nextSunday.getDate().toString() +
-      "日, 9:30午前",
     locationTitle: "アクセス",
     locationDescription: "私たちはどこにいますか?",
     locationAddress: "アドレス: 〒904-1106 沖縄県うるま市石川1丁目28-6",
